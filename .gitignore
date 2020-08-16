@@ -73,6 +73,3 @@ sysinfo.txt
 
 # Crashlytics generated file
 crashlytics-build.properties
-Assets/Install Bolt/*
-Assets/Install Bolt/*.dll
-Assets/Install Bolt/*.dll.meta
