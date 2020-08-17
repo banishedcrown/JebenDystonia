@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: c0cb39498aa84e049ac17ce0f0a8ddb8
+guid: eadc08dde56866e46b6abffa11ed7abb
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
   externalObjects: {}
   materials:
-    materialImportMode: 0
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -85,7 +85,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 100
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
