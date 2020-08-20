@@ -1,5 +1,169 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4340869816885357635
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5674844888329429406}
+  - component: {fileID: 3372885077224098869}
+  - component: {fileID: 5072555846455378473}
+  - component: {fileID: 7670210049062432569}
+  m_Layer: 0
+  m_Name: PlayerAudio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5674844888329429406
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4340869816885357635}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6835050365491092880}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &3372885077224098869
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4340869816885357635}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &5072555846455378473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4340869816885357635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1465209106, guid: c8d0ad23af520fe46aabe2b1fecf6462, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"declarations":{"collection":{"$content":[{"name":"player","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"volumeMin","value":{"$content":0.0,"$type":"System.Single"},"$version":"A"},{"name":"volumeMax","value":{"$content":0.0,"$type":"System.Single"},"$version":"A"},{"name":"stepDistance","value":{"$content":0.0,"$type":"System.Single"},"$version":"A"},{"name":"stepClips","value":{"$content":[1,2],"$type":"System.Collections.Generic.List`1[[UnityEngine.AudioClip,
+      UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _objectReferences:
+    - {fileID: 6835050365491092882}
+    - {fileID: 8300000, guid: 5ae398da7fa308e49a9c14fe261b195d, type: 3}
+    - {fileID: 8300000, guid: 036388bf898c71f4fb83822267eb095c, type: 3}
+--- !u!114 &7670210049062432569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4340869816885357635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -57143145, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: 790c21158e4071246b79aafbbc3606a7, type: 2}
 --- !u!1 &6835050365491092882
 GameObject:
   m_ObjectHideFlags: 0
@@ -32,6 +196,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6835050366005900605}
+  - {fileID: 5674844888329429406}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -82,10 +247,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"collection":{"$content":[{"name":"speed","value":{"$content":5.0,"$type":"System.Single"},"$version":"A"},{"name":"sprintSpeed","value":{"$content":10.0,"$type":"System.Single"},"$version":"A"},{"name":"crouchSpeed","value":{"$content":2.0,"$type":"System.Single"},"$version":"A"},{"name":"jumpForce","value":{"$content":10.0,"$type":"System.Single"},"$version":"A"},{"name":"gravity","value":{"$content":20.0,"$type":"System.Single"},"$version":"A"},{"name":"crouchHeight","value":{"$content":0.41,"$type":"System.Single"},"$version":"A"},{"name":"vertVelocity","value":{"$content":0.0,"$type":"System.Single"},"$version":"A"},{"name":"viewRoot","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"viewRootObj","value":{"$content":1,"$type":"UnityEngine.Object"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _json: '{"declarations":{"collection":{"$content":[{"name":"speed","value":{"$content":5.0,"$type":"System.Single"},"$version":"A"},{"name":"sprintSpeed","value":{"$content":10.0,"$type":"System.Single"},"$version":"A"},{"name":"crouchSpeed","value":{"$content":2.0,"$type":"System.Single"},"$version":"A"},{"name":"jumpForce","value":{"$content":10.0,"$type":"System.Single"},"$version":"A"},{"name":"gravity","value":{"$content":20.0,"$type":"System.Single"},"$version":"A"},{"name":"crouchHeight","value":{"$content":0.41,"$type":"System.Single"},"$version":"A"},{"name":"vertVelocity","value":{"$content":0.0,"$type":"System.Single"},"$version":"A"},{"name":"viewRoot","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"viewRootObj","value":{"$content":1,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"playerAudioObj","value":{"$content":2,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"crouchVolumeMin","value":{"$content":0.1,"$type":"System.Single"},"$version":"A"},{"name":"crouchVolumeMax","value":{"$content":0.2,"$type":"System.Single"},"$version":"A"},{"name":"sprintVolumeMin","value":{"$content":0.7,"$type":"System.Single"},"$version":"A"},{"name":"sprintVolumeMax","value":{"$content":1.0,"$type":"System.Single"},"$version":"A"},{"name":"walkingVolumeMin","value":{"$content":0.3,"$type":"System.Single"},"$version":"A"},{"name":"walkingVolumeMax","value":{"$content":0.6,"$type":"System.Single"},"$version":"A"},{"name":"crouchStepDistance","value":{"$content":0.5,"$type":"System.Single"},"$version":"A"},{"name":"sprintStepDistance","value":{"$content":0.25,"$type":"System.Single"},"$version":"A"},{"name":"walkingStepDistance","value":{"$content":0.4,"$type":"System.Single"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
     - {fileID: 6835050366005900605}
     - {fileID: 6835050366005900604}
+    - {fileID: 4340869816885357635}
 --- !u!114 &1955840214
 MonoBehaviour:
   m_ObjectHideFlags: 0
