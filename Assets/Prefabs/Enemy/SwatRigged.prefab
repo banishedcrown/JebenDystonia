@@ -1001,7 +1001,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4189175625770031602}
   m_Layer: 0
-  m_Name: SwatScaled100x
+  m_Name: SwatRigged
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1016,7 +1016,7 @@ Transform:
   m_GameObject: {fileID: 3560413976339612488}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.6932282, y: -1, z: 8.07987}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children:
   - {fileID: 5085166905284921708}
   - {fileID: 8576163347046470668}
