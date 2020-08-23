@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 406212}
   - component: {fileID: 3329604}
   - component: {fileID: 2398654}
+  - component: {fileID: -6875608242891012946}
   m_Layer: 0
   m_Name: AI_Prop_BookShelf_Small
   m_TagString: Untagged
@@ -81,3 +82,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-6875608242891012946
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 116224}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 9ed36cea9c3e9ac42878d038bd91ef47, type: 3}

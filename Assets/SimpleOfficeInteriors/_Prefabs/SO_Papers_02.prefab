@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 455976}
   - component: {fileID: 3355050}
   - component: {fileID: 2387480}
+  - component: {fileID: -3795422617753629992}
+  - component: {fileID: -8899694259492400702}
   m_Layer: 0
   m_Name: SO_Papers_02
   m_TagString: Untagged
@@ -81,3 +83,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &-3795422617753629992
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153916}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.7540951, y: 0.04089063, z: 1.2995386}
+  m_Center: {x: 0, y: 0.020445364, z: -0.0000002682209}
+--- !u!65 &-8899694259492400702
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153916}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.7540951, y: 0.04089063, z: 1.2995386}
+  m_Center: {x: 0, y: 0.020445364, z: -0.0000002682209}
