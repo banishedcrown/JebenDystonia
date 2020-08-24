@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 470802}
   - component: {fileID: 3392030}
   - component: {fileID: 2313956}
+  - component: {fileID: -7288715689649660839}
   m_Layer: 0
   m_Name: SO_StickyNotesPack_01
   m_TagString: Untagged
@@ -81,3 +82,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &-7288715689649660839
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122938}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.19496799, y: 0.09759641, z: 0.1899581}
+  m_Center: {x: 0, y: 0.048798203, z: 0}
