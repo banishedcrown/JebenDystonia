@@ -274,6 +274,7 @@ GameObject:
   - component: {fileID: 23232880}
   - component: {fileID: 1955840214}
   - component: {fileID: 879955550}
+  - component: {fileID: 1181040223}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -344,7 +345,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"collection":{"$content":[{"name":"speed","value":{"$content":5.0,"$type":"System.Single"},"$version":"A"},{"name":"sprintSpeed","value":{"$content":10.0,"$type":"System.Single"},"$version":"A"},{"name":"crouchSpeed","value":{"$content":2.0,"$type":"System.Single"},"$version":"A"},{"name":"jumpForce","value":{"$content":8.0,"$type":"System.Single"},"$version":"A"},{"name":"gravity","value":{"$content":20.0,"$type":"System.Single"},"$version":"A"},{"name":"crouchHeight","value":{"$content":0.41,"$type":"System.Single"},"$version":"A"},{"name":"vertVelocity","value":{"$content":0.0,"$type":"System.Single"},"$version":"A"},{"name":"viewRoot","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"viewRootObj","value":{"$content":1,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"playerAudioObj","value":{"$content":2,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"crouchVolumeMin","value":{"$content":0.1,"$type":"System.Single"},"$version":"A"},{"name":"crouchVolumeMax","value":{"$content":0.2,"$type":"System.Single"},"$version":"A"},{"name":"sprintVolumeMin","value":{"$content":0.7,"$type":"System.Single"},"$version":"A"},{"name":"sprintVolumeMax","value":{"$content":1.0,"$type":"System.Single"},"$version":"A"},{"name":"walkingVolumeMin","value":{"$content":0.3,"$type":"System.Single"},"$version":"A"},{"name":"walkingVolumeMax","value":{"$content":0.6,"$type":"System.Single"},"$version":"A"},{"name":"crouchStepDistance","value":{"$content":0.5,"$type":"System.Single"},"$version":"A"},{"name":"sprintStepDistance","value":{"$content":0.25,"$type":"System.Single"},"$version":"A"},{"name":"walkingStepDistance","value":{"$content":0.4,"$type":"System.Single"},"$version":"A"},{"name":"crouchingRate","value":{"$content":6.0,"$type":"System.Single"},"$version":"A"},{"name":"jumped","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _json: '{"declarations":{"collection":{"$content":[{"name":"speed","value":{"$content":5.0,"$type":"System.Single"},"$version":"A"},{"name":"sprintSpeed","value":{"$content":10.0,"$type":"System.Single"},"$version":"A"},{"name":"crouchSpeed","value":{"$content":2.0,"$type":"System.Single"},"$version":"A"},{"name":"jumpForce","value":{"$content":9.0,"$type":"System.Single"},"$version":"A"},{"name":"gravity","value":{"$content":20.0,"$type":"System.Single"},"$version":"A"},{"name":"crouchHeight","value":{"$content":0.41,"$type":"System.Single"},"$version":"A"},{"name":"vertVelocity","value":{"$content":0.0,"$type":"System.Single"},"$version":"A"},{"name":"viewRoot","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"viewRootObj","value":{"$content":1,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"playerAudioObj","value":{"$content":2,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"crouchVolumeMin","value":{"$content":0.1,"$type":"System.Single"},"$version":"A"},{"name":"crouchVolumeMax","value":{"$content":0.2,"$type":"System.Single"},"$version":"A"},{"name":"sprintVolumeMin","value":{"$content":0.7,"$type":"System.Single"},"$version":"A"},{"name":"sprintVolumeMax","value":{"$content":1.0,"$type":"System.Single"},"$version":"A"},{"name":"walkingVolumeMin","value":{"$content":0.3,"$type":"System.Single"},"$version":"A"},{"name":"walkingVolumeMax","value":{"$content":0.6,"$type":"System.Single"},"$version":"A"},{"name":"crouchStepDistance","value":{"$content":0.5,"$type":"System.Single"},"$version":"A"},{"name":"sprintStepDistance","value":{"$content":0.25,"$type":"System.Single"},"$version":"A"},{"name":"walkingStepDistance","value":{"$content":0.4,"$type":"System.Single"},"$version":"A"},{"name":"crouchingRate","value":{"$content":6.0,"$type":"System.Single"},"$version":"A"},{"name":"jumped","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"isCaught","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
     - {fileID: 6835050366005900605}
     - {fileID: 6835050366005900604}
@@ -381,6 +382,22 @@ MonoBehaviour:
     _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
     _objectReferences:
     - {fileID: 11400000, guid: 9f1e1cb615d776042bd9745ab59ba939, type: 2}
+--- !u!114 &1181040223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6835050365491092882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -57143145, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: 1edbf5263f5385c47966e51c2a13ade7, type: 2}
 --- !u!1 &6835050365810491904
 GameObject:
   m_ObjectHideFlags: 0
