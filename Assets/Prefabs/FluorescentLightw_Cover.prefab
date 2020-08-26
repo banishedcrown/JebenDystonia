@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 2378114453028201619}
   - component: {fileID: 2378114453028201629}
   - component: {fileID: 2378114453028201618}
+  - component: {fileID: 491524272407183782}
   m_Layer: 0
   m_Name: 2TubeFluorescentLight
   m_TagString: Untagged
@@ -114,6 +115,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &491524272407183782
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2378114453028201616}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.021193935, y: 0.015000003, z: 0.015000003}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2378114453638875962
 GameObject:
   m_ObjectHideFlags: 0
