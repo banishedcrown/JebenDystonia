@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD:Assets/Models/surveillance_camera.fbx.meta
-guid: d87ac10a336914a4bb48163f66defff2
-=======
-guid: 74e18d3fe991e114297ee54d14789fc7
->>>>>>> c53ba3703ff2ef58324667142a1d69f27b1a1587:Assets/Models/surveillance_camera_Updated.fbx.meta
+guid: 33dc53ab5d4f1944486b1a26279a54a3
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
