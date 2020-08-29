@@ -73,3 +73,37 @@ sysinfo.txt
 
 # Crashlytics generated file
 crashlytics-build.properties
+Assets/Dialogue/
+Assets/Plugins/
+Assets/Dialogue.meta
+Assets/Editor Default Resources.meta
+Assets/Gizmos.meta
+Assets/Plugins.meta
+Assets/Editor Default Resources/Dialogue System.meta
+Assets/Editor Default Resources/Dialogue System/Conditions.png
+Assets/Editor Default Resources/Dialogue System/Conditions.png.meta
+Assets/Editor Default Resources/Dialogue System/DialogueManager Inspector Dark.png
+Assets/Editor Default Resources/Dialogue System/DialogueManager Inspector Dark.png.meta
+Assets/Editor Default Resources/Dialogue System/DialogueManager Inspector Light.png
+Assets/Editor Default Resources/Dialogue System/DialogueManager Inspector Light.png.meta
+Assets/Editor Default Resources/Dialogue System/EditorNode.png
+Assets/Editor Default Resources/Dialogue System/EditorNode.png.meta
+Assets/Editor Default Resources/Dialogue System/Event.png
+Assets/Editor Default Resources/Dialogue System/Event.png.meta
+Assets/Editor Default Resources/Dialogue System/Script.png
+Assets/Editor Default Resources/Dialogue System/Script.png.meta
+Assets/Editor Default Resources/Dialogue System/Sequence.png
+Assets/Editor Default Resources/Dialogue System/Sequence.png.meta
+Assets/Gizmos/DialogueDatabase Icon.png
+Assets/Gizmos/DialogueDatabase Icon.png.meta
+Assets/Gizmos/StringAsset Icon.png
+Assets/Gizmos/StringAsset Icon.png.meta
+Assets/Gizmos/TextTable Icon.png
+Assets/Gizmos/TextTable Icon.png.meta
+Assets/Scenes/StartingRoom.meta
+Assets/Scenes/StartingRoom.unity
+Assets/Scenes/StartingRoom.unity.meta
+Assets/Scenes/StartingRoom/LightingData.asset
+Assets/Scenes/StartingRoom/LightingData.asset.meta
+Assets/Scenes/StartingRoom/ReflectionProbe-0.exr
+Assets/Scenes/StartingRoom/ReflectionProbe-0.exr.meta
