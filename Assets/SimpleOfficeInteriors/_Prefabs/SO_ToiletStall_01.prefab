@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 416216}
   - component: {fileID: 3300718}
   - component: {fileID: 2323976}
+  - component: {fileID: 2211775086687653483}
   m_Layer: 0
   m_Name: SO_Toilet_Door
   m_TagString: Untagged
@@ -81,6 +82,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2211775086687653483
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171996}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9909363, y: 3.0989914, z: 0.22347593}
+  m_Center: {x: -0.99546814, y: 0, z: 0.11173797}
 --- !u!1 &182838
 GameObject:
   m_ObjectHideFlags: 0
@@ -92,6 +106,7 @@ GameObject:
   - component: {fileID: 451632}
   - component: {fileID: 3319752}
   - component: {fileID: 2348456}
+  - component: {fileID: 4821050339340928112}
   m_Layer: 0
   m_Name: SO_ToiletStall_01
   m_TagString: Untagged
@@ -163,3 +178,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &4821050339340928112
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182838}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 70b0a2b1ed012ea45a9648ea396b3dec, type: 3}
