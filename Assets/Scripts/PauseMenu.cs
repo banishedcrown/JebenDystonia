@@ -51,6 +51,8 @@ public class PauseMenu : MonoBehaviour
 
     public void ReturntoMenu()
     {
+        GameIsPaused = false;
+        pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         Debug.Log("BacktoMenu");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
