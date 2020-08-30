@@ -17,7 +17,7 @@ public class PauseMenu : MonoBehaviour
         {
             if (GameIsPaused)
             {
-                Resume();
+                //Resume();
             }
             else
             {
