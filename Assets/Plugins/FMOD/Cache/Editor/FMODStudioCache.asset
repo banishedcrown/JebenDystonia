@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: event:/Player/Footsteps
   guid: 88feef527dac594fb04d7865b4e4eff0
   Banks:
-  - {fileID: -4572418258875706960}
+  - {fileID: 2529370043499041719}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -38,7 +38,7 @@ MonoBehaviour:
   Path: event:/Enemy/Creature burst
   guid: 5e6b925470afad44a9c476d3bf6ab69e
   Banks:
-  - {fileID: -4572418258875706960}
+  - {fileID: 2529370043499041719}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -61,7 +61,7 @@ MonoBehaviour:
   Path: event:/Environment/Lights
   guid: be1393b74fbf5b47b8a6e6c226e50943
   Banks:
-  - {fileID: -4572418258875706960}
+  - {fileID: 2529370043499041719}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -69,6 +69,23 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 4.6
   Length: 23290
+--- !u!114 &-6169267918367023071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music event/Death
+  m_EditorClassIdentifier: 
+  Name: Death
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-5769333445377561547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -84,7 +101,7 @@ MonoBehaviour:
   Path: event:/Player/Grab
   guid: 04f3cae005791945a31cca112aef9382
   Banks:
-  - {fileID: -4572418258875706960}
+  - {fileID: 2529370043499041719}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -108,7 +125,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-4572418258875706960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -126,7 +143,7 @@ MonoBehaviour:
   lastModified: 637344021650479782
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &-3593971668915597635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,7 +159,7 @@ MonoBehaviour:
   Path: event:/Enemy/Creature Roar
   guid: 61a97b2a13bc6d4194dd9a894b36fddb
   Banks:
-  - {fileID: -4572418258875706960}
+  - {fileID: 2529370043499041719}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -165,7 +182,7 @@ MonoBehaviour:
   Path: event:/Environment/Unlock door
   guid: 15956d0b24f53f45ba71a0fde4f156bd
   Banks:
-  - {fileID: -4572418258875706960}
+  - {fileID: 2529370043499041719}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -188,7 +205,7 @@ MonoBehaviour:
   Path: event:/UI/Click
   guid: 117d4dd22d2c454c9a0a1835294aa776
   Banks:
-  - {fileID: -4572418258875706960}
+  - {fileID: 2529370043499041719}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -211,7 +228,7 @@ MonoBehaviour:
   Path: event:/Enemy/Creature Shout
   guid: 1ff941864faa96478633d175d75033dc
   Banks:
-  - {fileID: -4572418258875706960}
+  - {fileID: 2529370043499041719}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -234,12 +251,12 @@ MonoBehaviour:
   Path: event:/Music/Music event
   guid: d4cdfcb4899cd44787404b33301234a9
   Banks:
-  - {fileID: -4572418258875706960}
+  - {fileID: 2529370043499041719}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -4721051190377520111}
+  - {fileID: -6169267918367023071}
   MinDistance: 0
   MaxDistance: 0
   Length: 64107
@@ -257,7 +274,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 2082735957341795271}
-  - {fileID: -4572418258875706960}
+  - {fileID: 2529370043499041719}
   EditorEvents:
   - {fileID: -5769333445377561547}
   - {fileID: -2333019480226746734}
@@ -274,10 +291,10 @@ MonoBehaviour:
   - {fileID: 2156161751191382940}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -4572418258875706960}
+  - {fileID: 2529370043499041719}
   StringsBanks:
   - {fileID: 2082735957341795271}
-  stringsBankWriteTime: 637344021650599771
+  stringsBankWriteTime: 637344236400000000
   cacheVersion: 3
 --- !u!114 &241809752832806188
 MonoBehaviour:
@@ -294,7 +311,7 @@ MonoBehaviour:
   Path: event:/Player/weapon shot pak1
   guid: 1eef19ecddcd5e46ab242ade4105e741
   Banks:
-  - {fileID: -4572418258875706960}
+  - {fileID: 2529370043499041719}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -316,7 +333,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/Audio/FmodProject/FmodProject/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637344021650599771
+  lastModified: 637344236400000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -337,7 +354,7 @@ MonoBehaviour:
   Path: event:/Enemy/Creature breathing
   guid: dac553dc12436c4babbc4d313ac0d8b0
   Banks:
-  - {fileID: -4572418258875706960}
+  - {fileID: 2529370043499041719}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -345,6 +362,24 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 4.6
   Length: 2817
+--- !u!114 &2529370043499041719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/FmodProject/FmodProject/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637344236400000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &4497251143852504339
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -360,7 +395,7 @@ MonoBehaviour:
   Path: event:/Environment/Open Door
   guid: 4c677a198cf2b0469ea56b2b61e560b8
   Banks:
-  - {fileID: -4572418258875706960}
+  - {fileID: 2529370043499041719}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -383,7 +418,7 @@ MonoBehaviour:
   Path: event:/Enemy/Creature React
   guid: bd7df16e47437c4cbcf0f2eab49628d1
   Banks:
-  - {fileID: -4572418258875706960}
+  - {fileID: 2529370043499041719}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
