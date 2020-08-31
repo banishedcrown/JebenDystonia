@@ -315,6 +315,20 @@ MonoBehaviour:
       value: 
       type: 0
       typeString: 
+  - id: 16
+    fields:
+    - title: Name
+      value: flashlightTouched
+      type: 0
+      typeString: 
+    - title: Initial Value
+      value: 0
+      type: 1
+      typeString: CustomFieldType_Number
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
   - id: 5
     fields:
     - title: Name
@@ -527,11 +541,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 1
+        value: -1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
+        value: 1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -555,7 +569,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: None()
+        value: 
         type: 0
         typeString: 
       conversationID: 1
@@ -591,14 +605,14 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 341.65833
-        y: 112.86023
+        x: 342.8348
+        y: 113.92406
         width: 160
         height: 30
     - id: 1
       fields:
       - title: Conversant
-        value: -1
+        value: 1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Dialogue Text
@@ -631,27 +645,18 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: Passthrough
+      falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 1
-        originDialogueID: 1
-        destinationConversationID: 1
-        destinationDialogueID: 3
-        isConnector: 0
-        priority: 2
-      conditionsString: Variable["TouchedDoor"] == 0
-      userScript: 'SetQuestState("Find The Key", "active");
-
-        Variable["TouchedDoor"]
-        = Variable["TouchedDoor"] + 1;'
+      outgoingLinks: []
+      conditionsString: Variable["TouchedDoor"] == 1
+      userScript: SetQuestState("Find The Key", "active");
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 264.81815
-        y: 340.34033
+        x: 1
+        y: 374.61823
         width: 160
         height: 30
     - id: 2
@@ -669,7 +674,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 2
+        value: -1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -771,24 +776,18 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: Passthrough
+      falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 1
-        originDialogueID: 3
-        destinationConversationID: 1
-        destinationDialogueID: 4
-        isConnector: 0
-        priority: 2
-      conditionsString: Variable["TouchedDoor"] == 1
-      userScript: Variable["TouchedDoor"] = Variable["TouchedDoor"] + 1
+      outgoingLinks: []
+      conditionsString: Variable["TouchedDoor"] == 2
+      userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 264.81815
-        y: 390.34033
+        x: 102.318146
+        y: 425.5676
         width: 160
         height: 30
     - id: 4
@@ -845,15 +844,15 @@ MonoBehaviour:
       falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks: []
-      conditionsString: Variable["TouchedDoor"] == 2
-      userScript: Variable["TouchedDoor"] = 2
+      conditionsString: Variable["TouchedDoor"] > 2
+      userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 264.81815
-        y: 440.34033
+        x: 255.72723
+        y: 372.1585
         width: 160
         height: 30
     - id: 5
@@ -910,25 +909,19 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: Passthrough
+      falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 1
-        originDialogueID: 5
-        destinationConversationID: 1
-        destinationDialogueID: 6
-        isConnector: 0
-        priority: 2
+      outgoingLinks: []
       conditionsString: Variable["hasFlashlight"] == true and (Variable["TouchedDoor"]
-        == 0)
-      userScript: Variable["TouchedDoor"] = Variable["TouchedDoor"] + 1
+        == 1)
+      userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 467.8748
-        y: 342.8498
+        x: 579.2384
+        y: 493.9862
         width: 160
         height: 30
     - id: 6
@@ -987,23 +980,17 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 1
-        originDialogueID: 6
-        destinationConversationID: 1
-        destinationDialogueID: 7
-        isConnector: 0
-        priority: 2
+      outgoingLinks: []
       conditionsString: Variable["hasFlashlight"] == true and (Variable["TouchedDoor"]
-        == 1)
-      userScript: Variable["TouchedDoor"] = Variable["TouchedDoor"] + 1
+        == 2)
+      userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 467.8748
-        y: 392.8498
+        x: 440.60205
+        y: 573.5316
         width: 160
         height: 30
     - id: 7
@@ -1063,15 +1050,15 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: Variable["hasFlashlight"] == true and (Variable["TouchedDoor"]
-        == 2)
-      userScript: Variable["TouchedDoor"] = 2
+        > 2)
+      userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 467.8748
-        y: 442.8498
+        x: 276.96564
+        y: 501.94073
         width: 160
         height: 30
     - id: 8
@@ -1089,7 +1076,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
+        value: -1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -1205,27 +1192,27 @@ MonoBehaviour:
         destinationConversationID: 1
         destinationDialogueID: 2
         isConnector: 0
-        priority: 3
+        priority: 4
       - originConversationID: 1
         originDialogueID: 9
         destinationConversationID: 1
-        destinationDialogueID: 5
-        isConnector: 0
-        priority: 3
-      - originConversationID: 1
-        originDialogueID: 9
-        destinationConversationID: 1
-        destinationDialogueID: 1
+        destinationDialogueID: 15
         isConnector: 0
         priority: 2
+      - originConversationID: 1
+        originDialogueID: 9
+        destinationConversationID: 1
+        destinationDialogueID: 16
+        isConnector: 0
+        priority: 3
       conditionsString: Variable["timesRestarted"] == 1
-      userScript: 
+      userScript: Variable["TouchedDoor"] = Variable["TouchedDoor"] + 1
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 349.8748
+        x: 348.90393
         y: 236.84991
         width: 160
         height: 30
@@ -1244,7 +1231,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
+        value: -1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -1281,27 +1268,19 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: Passthrough
+      falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 1
-        originDialogueID: 10
-        destinationConversationID: 1
-        destinationDialogueID: 11
-        isConnector: 0
-        priority: 2
-      conditionsString: (Variable["TouchedDoor"] == 0) and (CurrentQuestState("Find
+      outgoingLinks: []
+      conditionsString: (Variable["TouchedDoor"] > 0) and (CurrentQuestState("Find
         The Key") == "unassigned")
-      userScript: 'Variable["TouchedDoor"] = 1;
-
-'
+      userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 705.56165
-        y: 169.83911
+        x: 823.98267
+        y: 167.06824
         width: 160
         height: 30
     - id: 11
@@ -1319,7 +1298,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
+        value: -1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -1359,12 +1338,9 @@ MonoBehaviour:
       falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks: []
-      conditionsString: Variable["TouchedDoor"] == 1 and (CurrentQuestState("Find
+      conditionsString: Variable["TouchedDoor"] > 1 and (CurrentQuestState("Find
         The Key") == "unassigned")
-      userScript: 'Variable["TouchedDoor"] = 2;
-
-        SetQuestState("Find The
-        Key", "active")'
+      userScript: SetQuestState("Find The Key", "active")
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -1440,14 +1416,20 @@ MonoBehaviour:
         destinationDialogueID: 13
         isConnector: 0
         priority: 2
+      - originConversationID: 1
+        originDialogueID: 12
+        destinationConversationID: 1
+        destinationDialogueID: 11
+        isConnector: 0
+        priority: 3
       conditionsString: Variable["timesRestarted"] > 1
-      userScript: 
+      userScript: Variable["TouchedDoor"] = Variable["TouchedDoor"] + 1
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 565.36926
+        x: 566.68506
         y: 109.25198
         width: 160
         height: 30
@@ -1466,7 +1448,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
+        value: -1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -1531,7 +1513,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
+        value: -1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -1567,12 +1549,12 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: Passthrough
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: Variable["Camera_Active"] == true and (Variable["hasKey"]
         == true) and (Variable["timesRestarted"] >= 2)
-      userScript: 
+      userScript: Variable["TouchedDoor"] = Variable["TouchedDoor"] + 1
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -1582,8 +1564,175 @@ MonoBehaviour:
         y: 198.54208
         width: 160
         height: 30
-    canvasScrollPosition: {x: 38.458817, y: 0}
-    canvasZoom: 0.73000026
+    - id: 15
+      fields:
+      - title: Title
+        value: Default
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 1
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 1
+        originDialogueID: 15
+        destinationConversationID: 1
+        destinationDialogueID: 1
+        isConnector: 0
+        priority: 2
+      - originConversationID: 1
+        originDialogueID: 15
+        destinationConversationID: 1
+        destinationDialogueID: 3
+        isConnector: 0
+        priority: 2
+      - originConversationID: 1
+        originDialogueID: 15
+        destinationConversationID: 1
+        destinationDialogueID: 4
+        isConnector: 0
+        priority: 2
+      conditionsString: Variable["TouchedDoor"] > 0
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 143.22212
+        y: 292.53174
+        width: 160
+        height: 30
+    - id: 16
+      fields:
+      - title: Title
+        value: Flashlight
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 1
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 1
+        originDialogueID: 16
+        destinationConversationID: 1
+        destinationDialogueID: 5
+        isConnector: 0
+        priority: 2
+      - originConversationID: 1
+        originDialogueID: 16
+        destinationConversationID: 1
+        destinationDialogueID: 6
+        isConnector: 0
+        priority: 2
+      - originConversationID: 1
+        originDialogueID: 16
+        destinationConversationID: 1
+        destinationDialogueID: 7
+        isConnector: 0
+        priority: 2
+      conditionsString: Variable["hasFlashlight"] == true and (Variable["TouchedDoor"]
+        > 0)
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 436.23843
+        y: 420.94083
+        width: 160
+        height: 30
+    canvasScrollPosition: {x: 117.9925, y: 36.028023}
+    canvasZoom: 0.88000023
   - id: 2
     fields:
     - title: Title
@@ -1718,7 +1867,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
+        value: -1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -1761,7 +1910,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: CurrentQuestState("Find The Key") == "active"
-      userScript: Variable["hasKey"] = true
+      userScript: Variable["hasKey"] = true;
       onExecute:
         m_PersistentCalls:
           m_Calls:
@@ -1779,8 +1928,8 @@ MonoBehaviour:
             m_CallState: 2
       canvasRect:
         serializedVersion: 2
-        x: 179
-        y: 255
+        x: 223
+        y: 268
         width: 160
         height: 30
     - id: 2
@@ -1798,7 +1947,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
+        value: -1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -1839,14 +1988,14 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: CurrentQuestState("Find The Key") == "unassigned"
-      userScript: Variable["hasKey"] = true
+      userScript: Variable["hasKey"] = true;
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 40
-        y: 210
+        x: 37
+        y: 268
         width: 160
         height: 30
     - id: 3
@@ -2005,13 +2154,13 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: Variable["timesRestarted"] > 1
-      userScript: Variable["hasKey"] = true
+      userScript: Variable["hasKey"] = true;
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 469
+        x: 470
         y: 102
         width: 160
         height: 30
@@ -2030,7 +2179,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
+        value: -1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -2096,7 +2245,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
+        value: -1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -2161,7 +2310,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
+        value: -1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -2226,7 +2375,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
+        value: -1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -2278,8 +2427,8 @@ MonoBehaviour:
         y: 81
         width: 160
         height: 30
-    canvasScrollPosition: {x: 68.69748, y: 0}
-    canvasZoom: 0.9100001
+    canvasScrollPosition: {x: 0, y: 15.463928}
+    canvasZoom: 0.97
   - id: 3
     fields:
     - title: Title
@@ -2413,7 +2562,20 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: Variable["TouchedDoor"] = 0
+      userScript: 'Variable["TouchedDoor"] = 0;
+
+        Variable["ExitDoorTouched"]
+        = 0;
+
+        Variable["hasFlashlight"] = false;
+
+        Variable["hasGun"]
+        = false;
+
+        Variable["hasExitKey"] = false;
+
+        Variable["hasKey"]
+        = false'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -2799,7 +2961,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
+        value: -1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -2811,12 +2973,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'Great now my head hurts even more.
-
-          It also seems like
-          they took all of my stuff.
-
-          At least I''m not dead?'
+        value: "Great now my head hurts even more.\r"
         type: 0
         typeString: 
       - title: Parenthetical
@@ -2842,7 +2999,13 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Passthrough
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 6
+        destinationConversationID: 3
+        destinationDialogueID: 34
+        isConnector: 0
+        priority: 2
       conditionsString: Variable["timesRestarted"] == 1 and (Variable["hasExitKey"]
         == false)
       userScript: Variable["timesRestarted"] = 2
@@ -2851,8 +3014,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 76.11281
-        y: 390.17303
+        x: 176.1128
+        y: 355.79803
         width: 160
         height: 30
     - id: 7
@@ -2962,7 +3125,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
+        value: -1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -2974,9 +3137,10 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "Great now my head hurts even more.\r\nIt also seems like they took
-          all of my stuff.\r\nI think there\u2019s still a little bit of my squad
-          in there\u2026."
+        value: 'Great now my head hurts even more.
+
+
+'
         type: 0
         typeString: 
       - title: Parenthetical
@@ -3002,7 +3166,13 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Passthrough
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 9
+        destinationConversationID: 3
+        destinationDialogueID: 32
+        isConnector: 0
+        priority: 2
       conditionsString: Variable["timesRestarted"] == 1 and (Variable["hasExitKey"]
         == true)
       userScript: Variable["timesRestarted"] = 2
@@ -3011,8 +3181,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 62.283005
-        y: 466.83258
+        x: 24.783005
+        y: 502.77008
         width: 160
         height: 30
     - id: 10
@@ -3030,7 +3200,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
+        value: -1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -3042,8 +3212,9 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "Great now my head hurts even more.\r\nIt also seems like they took
-          all of my stuff.\r\nI\u2019m surprised they didn\u2019t just tear me apart"
+        value: 'Great now my head hurts even more.
+
+'
         type: 0
         typeString: 
       - title: Parenthetical
@@ -3069,7 +3240,13 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 10
+        destinationConversationID: 3
+        destinationDialogueID: 28
+        isConnector: 0
+        priority: 2
       conditionsString: Variable["timesRestarted"] == 1 and (Variable["missed"] ==
         true)
       userScript: Variable["timesRestarted"] = 2
@@ -3078,8 +3255,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 273.60214
-        y: 558.30133
+        x: 415.78964
+        y: 580.17633
         width: 160
         height: 30
     - id: 11
@@ -3097,7 +3274,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
+        value: -1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -3109,9 +3286,10 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "Great now my head hurts even more.\r\nIt also seems like they took
-          all of my stuff.\r\nI don\u2019t even know if hitting one of them would
-          have been an good idea."
+        value: 'Great now my head hurts even more.
+
+
+'
         type: 0
         typeString: 
       - title: Parenthetical
@@ -3137,7 +3315,13 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Passthrough
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 11
+        destinationConversationID: 3
+        destinationDialogueID: 30
+        isConnector: 0
+        priority: 2
       conditionsString: Variable["timesRestarted"] == 1 and (Variable["missed"] ==
         true) and (Variable["hasExitKey"] == true)
       userScript: Variable["timesRestarted"] = 2
@@ -3146,8 +3330,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 63.02767
-        y: 560.322
+        x: 225.52765
+        y: 583.75946
         width: 160
         height: 30
     - id: 12
@@ -3165,7 +3349,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 2
+        value: -1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -3236,7 +3420,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
+        value: -1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -3253,8 +3437,7 @@ MonoBehaviour:
           I
           guess they are worried about me raising an alert?
 
-          What part
-          of them is being so restrained even after being changed?'
+'
         type: 0
         typeString: 
       - title: Parenthetical
@@ -3284,7 +3467,13 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Passthrough
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 13
+        destinationConversationID: 3
+        destinationDialogueID: 36
+        isConnector: 0
+        priority: 2
       conditionsString: Variable["hasExitKey"] == true
       userScript: 
       onExecute:
@@ -3292,8 +3481,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 505.4713
-        y: 424.31516
+        x: 553.90875
+        y: 279.00272
         width: 160
         height: 30
     - id: 14
@@ -3311,7 +3500,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
+        value: -1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -3379,7 +3568,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
+        value: -1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -3708,12 +3897,12 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
@@ -3775,12 +3964,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
@@ -3846,12 +4035,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
@@ -3914,12 +4103,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
@@ -4059,12 +4248,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
@@ -4124,12 +4313,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
@@ -4189,12 +4378,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
@@ -4259,12 +4448,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
@@ -4313,8 +4502,691 @@ MonoBehaviour:
         y: 253.64954
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.8799999
+    - id: 28
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: 'It also seems like they took all of my stuff.
+
+'
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 28
+        destinationConversationID: 3
+        destinationDialogueID: 29
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 415.78964
+        y: 630.17633
+        width: 160
+        height: 30
+    - id: 29
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: "I\u2019m surprised they didn\u2019t just tear me apart"
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 415.78964
+        y: 680.17633
+        width: 160
+        height: 30
+    - id: 30
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: "It also seems like they took all of my stuff.\r"
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 30
+        destinationConversationID: 3
+        destinationDialogueID: 31
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 225.52765
+        y: 633.75946
+        width: 160
+        height: 30
+    - id: 31
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: "I don\u2019t even know if hitting one of them would have been an
+          good idea."
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 225.52765
+        y: 683.75946
+        width: 160
+        height: 30
+    - id: 32
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: "It also seems like they took all of my stuff.\r"
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 32
+        destinationConversationID: 3
+        destinationDialogueID: 33
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 24.783005
+        y: 552.7701
+        width: 160
+        height: 30
+    - id: 33
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: "I think there\u2019s still a little bit of my squad in there\u2026."
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 24.783005
+        y: 602.7701
+        width: 160
+        height: 30
+    - id: 34
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: "It also seems like they took all of my stuff.\r"
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 34
+        destinationConversationID: 3
+        destinationDialogueID: 35
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 76.11281
+        y: 402.67303
+        width: 160
+        height: 30
+    - id: 35
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: At least I'm not dead?
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 7.25
+        y: 446.42303
+        width: 160
+        height: 30
+    - id: 36
+      fields:
+      - title: Title
+        value: New Dialogue Entry
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 36
+        destinationConversationID: 3
+        destinationDialogueID: 37
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 466.4088
+        y: 339.94022
+        width: 160
+        height: 30
+    - id: 37
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: What part of them is being so restrained even after being changed?
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 466.4088
+        y: 389.94022
+        width: 160
+        height: 30
+    canvasScrollPosition: {x: 0, y: 118.75}
+    canvasZoom: 0.6400001
   - id: 4
     fields:
     - title: Title
@@ -4449,12 +5321,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
@@ -4463,8 +5335,7 @@ MonoBehaviour:
       - title: Dialogue Text
         value: 'Well, this seems like it might be useful.
 
-          I guess this
-          would help me better search the room.'
+'
         type: 0
         typeString: 
       - title: Parenthetical
@@ -4490,9 +5361,18 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 4
+        originDialogueID: 1
+        destinationConversationID: 4
+        destinationDialogueID: 8
+        isConnector: 0
+        priority: 2
       conditionsString: CurrentQuestState("Find The Key") == "unassigned"
-      userScript: Variable["hasFlashlight"] = true
+      userScript: 'Variable["hasFlashlight"] = true;
+
+        Variable["flashlightTouched"]
+        = Variable["flashlightTouched"] + 1'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -4517,20 +5397,19 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "Huh, weird that this flashlight is just lying around. \r\nStill need
-          to get out, perhaps there\u2019s a key around here for the door."
+        value: "Huh, weird that this flashlight is just lying around. \r\n"
         type: 0
         typeString: 
       - title: Parenthetical
@@ -4556,17 +5435,26 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 4
+        originDialogueID: 2
+        destinationConversationID: 4
+        destinationDialogueID: 9
+        isConnector: 0
+        priority: 2
       conditionsString: CurrentQuestState("Find The Key") == "active" and (Variable["hasKey"]
         == false)
-      userScript: Variable["hasFlashlight"] = true
+      userScript: 'Variable["hasFlashlight"] = true;
+
+        Variable["flashlightTouched"]
+        = Variable["flashlightTouched"] + 1'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 209.64835
-        y: 306.139
+        x: 199.01006
+        y: 283.79858
         width: 160
         height: 30
     - id: 3
@@ -4584,20 +5472,21 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "Very nice, a flashlight.\r\nThis should help, good thing I didn\u2019t
-          miss it"
+        value: 'Very nice, a flashlight.
+
+'
         type: 0
         typeString: 
       - title: Parenthetical
@@ -4623,10 +5512,19 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 4
+        originDialogueID: 3
+        destinationConversationID: 4
+        destinationDialogueID: 10
+        isConnector: 0
+        priority: 2
       conditionsString: CurrentQuestState("Find The Key") == "success" and (Variable["hasKey"]
         == true)
-      userScript: Variable["hasFlashlight"] = true
+      userScript: 'Variable["hasFlashlight"] = true;
+
+        Variable["flashlightTouched"]
+        = Variable["flashlightTouched"] + 1'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -4811,12 +5709,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
@@ -4825,8 +5723,7 @@ MonoBehaviour:
       - title: Dialogue Text
         value: 'Oh hey, the flashlight again.
 
-          Weird that they left it
-          in here again.'
+'
         type: 0
         typeString: 
       - title: Parenthetical
@@ -4852,16 +5749,23 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
-      conditionsString: Variable["hasFlashlight"] == true
-      userScript: 
+      outgoingLinks:
+      - originConversationID: 4
+        originDialogueID: 6
+        destinationConversationID: 4
+        destinationDialogueID: 11
+        isConnector: 0
+        priority: 2
+      conditionsString: Variable["flashlightTouched"] > 0
+      userScript: Variable["flashlightTouched"] = Variable["flashlightTouched"] +
+        1
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 419.24173
-        y: 143.18681
+        x: 433.0715
+        y: 142.12299
         width: 160
         height: 30
     - id: 7
@@ -4879,11 +5783,87 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
+        value: -1
+        type: 0
+        typeString: CustomFieldType_Actor
+      - title: Conversant
         value: 1
+        type: 0
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: 'Huh, did not notice this being around before.
+
+'
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 4
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 4
+        originDialogueID: 7
+        destinationConversationID: 4
+        destinationDialogueID: 12
+        isConnector: 0
+        priority: 2
+      conditionsString: Variable["flashlightTouched"] == 0
+      userScript: 'Variable["hasFlashlight"] = true;
+
+        Variable["flashlightTouched"]
+        = Variable["flashlightTouched"] + 1'
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 628.2357
+        y: 140.65826
+        width: 160
+        height: 30
+    - id: 8
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
+        value: 1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -4891,8 +5871,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "Huh, did not notice this being around before.\r\nI hope I didn\u2019t
-          miss it last time."
+        value: I guess this would help me better search the room.
         type: 0
         typeString: 
       - title: Parenthetical
@@ -4919,19 +5898,280 @@ MonoBehaviour:
       falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks: []
-      conditionsString: Variable["hasFlashlight"] == false
-      userScript: Variable["hasFlashlight"] = true
+      conditionsString: 
+      userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 621.4396
-        y: 146.4835
+        x: 18.538467
+        y: 328.63736
         width: 160
         height: 30
-    canvasScrollPosition: {x: 26.373627, y: 0}
-    canvasZoom: 0.9100001
+    - id: 9
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: "Still need to get out, perhaps there\u2019s a key around here for
+          the door."
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 4
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 199.01006
+        y: 333.79858
+        width: 160
+        height: 30
+    - id: 10
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: "This should help, good thing I didn\u2019t miss it"
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 4
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 383.65936
+        y: 341.82416
+        width: 160
+        height: 30
+    - id: 11
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Weird that they left it in here again.
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 4
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 433.0715
+        y: 192.12299
+        width: 160
+        height: 30
+    - id: 12
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: "I hope I didn\u2019t miss it last time."
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 4
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 628.2357
+        y: 190.65826
+        width: 160
+        height: 30
+    canvasScrollPosition: {x: 252.12766, y: 1.0638428}
+    canvasZoom: 0.94000006
   - id: 5
     fields:
     - title: Title
@@ -5066,20 +6306,19 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "Let see\u2026 If I just overwork its motor.\r\nNow it can\u2019t
-          turn anymore.\r\nThat should help me not be noticed this time."
+        value: "Let see\u2026 If I just overwork its motor.\r\n"
         type: 0
         typeString: 
       - title: Parenthetical
@@ -5105,7 +6344,13 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 1
+        destinationConversationID: 5
+        destinationDialogueID: 3
+        isConnector: 0
+        priority: 2
       conditionsString: Variable["CameraDeactivated"] == 0
       userScript: 'Variable["Camera_Active"] = false;
 
@@ -5135,12 +6380,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
@@ -5188,8 +6433,144 @@ MonoBehaviour:
         y: 138
         width: 160
         height: 30
+    - id: 3
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: "Now it can\u2019t turn anymore.\r\n"
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 3
+        destinationConversationID: 5
+        destinationDialogueID: 4
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 130
+        y: 187
+        width: 160
+        height: 30
+    - id: 4
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: That should help me not be noticed this time.
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 130
+        y: 236
+        width: 160
+        height: 30
     canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 1
+    canvasZoom: 0.9100001
   - id: 6
     fields:
     - title: Title
@@ -5484,19 +6865,19 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "Huh, A key. \r\nI guess I\u2019ll pocket this as well.\r"
+        value: "Huh, A key. \r\n"
         type: 0
         typeString: 
       - title: Parenthetical
@@ -5526,7 +6907,7 @@ MonoBehaviour:
       - originConversationID: 6
         originDialogueID: 3
         destinationConversationID: 6
-        destinationDialogueID: 5
+        destinationDialogueID: 11
         isConnector: 0
         priority: 2
       conditionsString: CurrentQuestState("Find Exit Key") == "unassigned"
@@ -5555,21 +6936,21 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "Hey, I think this key might work for the exit.\r\nI\u2019m going
-          to go ahead and take it.\r\n(Has flashback to him and a group entering
-          the building)\r\nWait, were those\u2026 Things my squadmates?"
+        value: 'Hey, I think this key might work for the exit.
+
+'
         type: 0
         typeString: 
       - title: Parenthetical
@@ -5599,7 +6980,7 @@ MonoBehaviour:
       - originConversationID: 6
         originDialogueID: 4
         destinationConversationID: 6
-        destinationDialogueID: 5
+        destinationDialogueID: 10
         isConnector: 0
         priority: 2
       conditionsString: Variable["ExitDoorTouched"] > 0 and (CurrentQuestState("Find
@@ -5619,7 +7000,7 @@ MonoBehaviour:
       - title: Title
         value: FlashBackToMeeting
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Pictures
         value: '[]'
         type: 3
@@ -5627,27 +7008,27 @@ MonoBehaviour:
       - title: Description
         value: "(Has flashback to him and a group entering the building)\r"
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Dialogue Text
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Parenthetical
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Audio Files
         value: '[]'
         type: 3
@@ -5655,11 +7036,11 @@ MonoBehaviour:
       - title: Video File
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Sequence
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       conversationID: 6
       isRoot: 0
       isGroup: 0
@@ -5681,8 +7062,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 153.69234
-        y: 298.8901
+        x: 165.03255
+        y: 463.8386
         width: 160
         height: 30
     - id: 6
@@ -5700,12 +7081,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
@@ -5746,8 +7127,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 152.59343
-        y: 346.69232
+        x: 163.93364
+        y: 511.6408
         width: 160
         height: 30
     - id: 7
@@ -5765,20 +7146,19 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "Hey, its that same key again. \r\nI think this should work for that
-          exit door."
+        value: "Hey, its that same key again. \r\n"
         type: 0
         typeString: 
       - title: Parenthetical
@@ -5804,7 +7184,13 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 6
+        originDialogueID: 7
+        destinationConversationID: 6
+        destinationDialogueID: 13
+        isConnector: 0
+        priority: 2
       conditionsString: Variable["ExitDoorTouched"] > 0 and (CurrentQuestState("Find
         Exit Key") == "active")
       userScript: 
@@ -5832,20 +7218,19 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "Hey, its that same key again. \r\nI assume it works for some door
-          here"
+        value: "Hey, its that same key again. \r\n"
         type: 0
         typeString: 
       - title: Parenthetical
@@ -5871,7 +7256,13 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 6
+        originDialogueID: 8
+        destinationConversationID: 6
+        destinationDialogueID: 12
+        isConnector: 0
+        priority: 2
       conditionsString: CurrentQuestState("Find Exit Key") == "unassigned"
       userScript: 
       onExecute:
@@ -5898,7 +7289,78 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
+        value: -1
+        type: 0
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 0
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: "There\u2019s the Exit door key.\r\n"
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 6
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 6
+        originDialogueID: 9
+        destinationConversationID: 6
+        destinationDialogueID: 14
+        isConnector: 0
+        priority: 2
+      conditionsString: Variable["ExitDoorUnlocked"] > 0
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 721.8241
+        y: 186.25273
+        width: 160
+        height: 30
+    - id: 10
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -5910,8 +7372,149 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "There\u2019s the Exit door key.\r\nNow time to actually use it without
-          getting caught"
+        value: "I\u2019m going to go ahead and take it.\r"
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 6
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 6
+        originDialogueID: 10
+        destinationConversationID: 6
+        destinationDialogueID: 5
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 240.50552
+        y: 295.59338
+        width: 160
+        height: 30
+    - id: 11
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: "I guess I\u2019ll pocket this as well.\r"
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 6
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 6
+        originDialogueID: 11
+        destinationConversationID: 6
+        destinationDialogueID: 5
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 56.989044
+        y: 294.4945
+        width: 160
+        height: 30
+    - id: 12
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: I assume it works for some door here
         type: 0
         typeString: 
       - title: Parenthetical
@@ -5938,19 +7541,149 @@ MonoBehaviour:
       falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks: []
-      conditionsString: Variable["ExitDoorUnlocked"] > 0
+      conditionsString: 
       userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 721.8241
-        y: 186.25273
+        x: 426.04388
+        y: 295.05496
         width: 160
         height: 30
-    canvasScrollPosition: {x: 143.95602, y: 6.5934143}
-    canvasZoom: 0.9100001
+    - id: 13
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: I think this should work for that exit door.
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 6
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 609.5603
+        y: 296.15384
+        width: 160
+        height: 30
+    - id: 14
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Now time to actually use it without getting caught
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 6
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 854.8138
+        y: 252.74757
+        width: 160
+        height: 30
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 0.73000026
   - id: 7
     fields:
     - title: Title
@@ -6195,21 +7928,21 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "It seems the door is locked as well.\r\nI don\u2019t think my key
-          works however.\r\nI also don\u2019t want to sit here and fiddle around
-          with it."
+        value: 'It seems the door is locked as well.
+
+'
         type: 0
         typeString: 
       - title: Parenthetical
@@ -6235,7 +7968,13 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 7
+        originDialogueID: 2
+        destinationConversationID: 7
+        destinationDialogueID: 20
+        isConnector: 0
+        priority: 2
       conditionsString: (Variable["hasKey"] == true) and (Variable["hasExitKey"]
         == false)
       userScript: 
@@ -6313,7 +8052,7 @@ MonoBehaviour:
         destinationConversationID: 7
         destinationDialogueID: 6
         isConnector: 0
-        priority: 2
+        priority: 3
       - originConversationID: 7
         originDialogueID: 3
         destinationConversationID: 7
@@ -6336,6 +8075,18 @@ MonoBehaviour:
         originDialogueID: 3
         destinationConversationID: 7
         destinationDialogueID: 16
+        isConnector: 0
+        priority: 2
+      - originConversationID: 7
+        originDialogueID: 3
+        destinationConversationID: 7
+        destinationDialogueID: 10
+        isConnector: 0
+        priority: 2
+      - originConversationID: 7
+        originDialogueID: 3
+        destinationConversationID: 7
+        destinationDialogueID: 7
         isConnector: 0
         priority: 2
       conditionsString: Variable["ExitDoorTouched"] >= 1
@@ -6364,20 +8115,24 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "It seems the door is locked as well.\r\nLet me just try and test
-          that original key.\r\n\u2026\r\nNope"
+        value: 'It seems the door is locked as well.
+
+          Let me just try and
+          test that original key.
+
+'
         type: 0
         typeString: 
       - title: Parenthetical
@@ -6403,7 +8158,13 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 7
+        originDialogueID: 4
+        destinationConversationID: 7
+        destinationDialogueID: 19
+        isConnector: 0
+        priority: 2
       conditionsString: (Variable["hasKey"] == true) and (Variable["hasFlashlight"]
         == true) and (Variable["hasExitKey"] == false)
       userScript: 
@@ -6431,12 +8192,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
@@ -6497,20 +8258,19 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "I guess I can give it a quick shot\u2026.\r\nYeah doesn\u2019t seem
-          to even fit"
+        value: "I guess I can give it a quick shot\u2026.\r\n"
         type: 0
         typeString: 
       - title: Parenthetical
@@ -6540,7 +8300,7 @@ MonoBehaviour:
       - originConversationID: 7
         originDialogueID: 6
         destinationConversationID: 7
-        destinationDialogueID: 7
+        destinationDialogueID: 24
         isConnector: 0
         priority: 2
       conditionsString: (Variable["hasKey"] == true) and (Variable["hasExitKey"]
@@ -6551,8 +8311,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 968.609
-        y: 346.93
+        x: 1101.5636
+        y: 320.79364
         width: 160
         height: 30
     - id: 7
@@ -6570,12 +8330,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
@@ -6617,8 +8377,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 982.598
-        y: 398.46844
+        x: 1013.2798
+        y: 404.15027
         width: 160
         height: 30
     - id: 8
@@ -6636,12 +8396,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
@@ -6650,8 +8410,7 @@ MonoBehaviour:
       - title: Dialogue Text
         value: 'Looks like the door is locked.
 
-          I could try using the one
-          bullet I have, but this is not a high enough caliber to have a chance.'
+'
         type: 0
         typeString: 
       - title: Parenthetical
@@ -6677,7 +8436,13 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 7
+        originDialogueID: 8
+        destinationConversationID: 7
+        destinationDialogueID: 18
+        isConnector: 0
+        priority: 2
       conditionsString: (Variable["hasGun"] == true) and (Variable["hasExitKey"]
         == false) and (Variable["hasKey"] == true)
       userScript: 
@@ -6705,12 +8470,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
@@ -6719,8 +8484,7 @@ MonoBehaviour:
       - title: Dialogue Text
         value: 'If I had a shotgun sure. I could try shooting the lock off.
 
-          Also,
-          one bullet. Shooting it would really limit my options.'
+'
         type: 0
         typeString: 
       - title: Parenthetical
@@ -6750,7 +8514,7 @@ MonoBehaviour:
       - originConversationID: 7
         originDialogueID: 9
         destinationConversationID: 7
-        destinationDialogueID: 10
+        destinationDialogueID: 23
         isConnector: 0
         priority: 2
       conditionsString: (Variable["hasKey"] == true) and (Variable["hasExitKey"]
@@ -6762,8 +8526,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 780.19055
-        y: 364.8567
+        x: 741.54706
+        y: 346.35977
         width: 160
         height: 30
     - id: 10
@@ -6781,12 +8545,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
@@ -6829,8 +8593,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 780.19055
-        y: 414.8567
+        x: 813.8628
+        y: 445.8973
         width: 160
         height: 30
     - id: 11
@@ -6848,12 +8612,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
@@ -6913,12 +8677,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
@@ -6978,12 +8742,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
@@ -7043,12 +8807,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
@@ -7108,20 +8872,23 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "Crap, the door is locked.\r\nLet me try this key I found.\r\n\u2026\r\nHey!
-          It works, time to get out and warn everyone."
+        value: 'Crap, the door is locked.
+
+          Let me try this key I found.
+
+'
         type: 0
         typeString: 
       - title: Parenthetical
@@ -7147,7 +8914,13 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 7
+        originDialogueID: 15
+        destinationConversationID: 7
+        destinationDialogueID: 22
+        isConnector: 0
+        priority: 2
       conditionsString: Variable["hasExitKey"] == true and (Variable["ExitDoorUnlocked"]
         == 0)
       userScript: 'SetQuestState("Find Exit Key", "success");
@@ -7159,8 +8932,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 337.44644
-        y: 246.87161
+        x: 322.6737
+        y: 284.3716
         width: 160
         height: 30
     - id: 16
@@ -7178,12 +8951,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
@@ -7192,8 +8965,7 @@ MonoBehaviour:
       - title: Dialogue Text
         value: 'Hey, would you look at that. It works!
 
-          Time to get out
-          of here and warn everyone.'
+'
         type: 0
         typeString: 
       - title: Parenthetical
@@ -7219,7 +8991,13 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 7
+        originDialogueID: 16
+        destinationConversationID: 7
+        destinationDialogueID: 25
+        isConnector: 0
+        priority: 2
       conditionsString: Variable["hasExitKey"] == true and (Variable["ExitDoorUnlocked"]
         == 0)
       userScript: 'SetQuestState("Find Exit Key", "success");
@@ -7250,12 +9028,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
@@ -7304,7 +9082,534 @@ MonoBehaviour:
         y: 147.74998
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 0}
+    - id: 18
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: I could try using the one bullet I have, but this is not a high enough
+          caliber to have a chance.
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 7
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 424.37936
+        y: 478.12177
+        width: 160
+        height: 30
+    - id: 19
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: "\u2026\r\nNope"
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 7
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 226.7912
+        y: 532.85706
+        width: 160
+        height: 30
+    - id: 20
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: "I don\u2019t think my key works however.\r\n"
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 7
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 7
+        originDialogueID: 20
+        destinationConversationID: 7
+        destinationDialogueID: 21
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 31.791199
+        y: 529.85706
+        width: 160
+        height: 30
+    - id: 21
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: "I also don\u2019t want to sit here and fiddle around with it."
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 7
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 31.791199
+        y: 579.85706
+        width: 160
+        height: 30
+    - id: 22
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: "\u2026\r\nHey! It works, time to get out and warn everyone."
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 7
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 502.00336
+        y: 301.9349
+        width: 160
+        height: 30
+    - id: 23
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Also, one bullet. Shooting it would really limit my options.
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 7
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 658.5924
+        y: 397.4962
+        width: 160
+        height: 30
+    - id: 24
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: "Yeah doesn\u2019t seem to even fit"
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 7
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 1206.109
+        y: 376.47546
+        width: 160
+        height: 30
+    - id: 25
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Time to get out of here and warn everyone.
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 7
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 1322.6101
+        y: 146.84576
+        width: 160
+        height: 30
+    canvasScrollPosition: {x: 378.43695, y: 48.520947}
     canvasZoom: 0.67000026
   - id: 8
     fields:
@@ -7520,12 +9825,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
@@ -7594,12 +9899,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
@@ -7608,7 +9913,7 @@ MonoBehaviour:
       - title: Dialogue Text
         value: 'What a weird gun.
 
-          Just one bullet, why is this even here?'
+'
         type: 0
         typeString: 
       - title: Parenthetical
@@ -7634,7 +9939,13 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 8
+        originDialogueID: 5
+        destinationConversationID: 8
+        destinationDialogueID: 20
+        isConnector: 0
+        priority: 2
       conditionsString: 
       userScript: 
       onExecute:
@@ -7661,12 +9972,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
@@ -7701,7 +10012,13 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 8
+        originDialogueID: 6
+        destinationConversationID: 8
+        destinationDialogueID: 19
+        isConnector: 0
+        priority: 2
       conditionsString: Variable["hasExitKey"] == true
       userScript: 
       onExecute:
@@ -7728,12 +10045,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
@@ -7741,7 +10058,7 @@ MonoBehaviour:
         typeString: 
       - title: Dialogue Text
         value: "I... I really don\u2019t want to use this. I might be able to still
-          save them.\r\nThey\u2019re still in there. Just one bullet though."
+          save them.\r\n"
         type: 0
         typeString: 
       - title: Parenthetical
@@ -7767,7 +10084,13 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 8
+        originDialogueID: 7
+        destinationConversationID: 8
+        destinationDialogueID: 23
+        isConnector: 0
+        priority: 2
       conditionsString: Variable["hasExitKey"] == true
       userScript: 
       onExecute:
@@ -7794,20 +10117,21 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "This should afford me some protection.\r\nJust one bullet however.\r\nHopefully
-          this doesn\u2019t provoke them from not being non-lethal"
+        value: 'This should afford me some protection.
+
+'
         type: 0
         typeString: 
       - title: Parenthetical
@@ -7833,7 +10157,13 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 8
+        originDialogueID: 8
+        destinationConversationID: 8
+        destinationDialogueID: 21
+        isConnector: 0
+        priority: 2
       conditionsString: 
       userScript: 
       onExecute:
@@ -8014,20 +10344,19 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "Huh that original round still hasn\u2019t been fired.\r\nLets actually
-          try and use it this time."
+        value: "Huh that original round still hasn\u2019t been fired.\r\n"
         type: 0
         typeString: 
       - title: Parenthetical
@@ -8053,7 +10382,13 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 8
+        originDialogueID: 11
+        destinationConversationID: 8
+        destinationDialogueID: 24
+        isConnector: 0
+        priority: 2
       conditionsString: 
       userScript: 
       onExecute:
@@ -8080,12 +10415,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
@@ -8146,12 +10481,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
@@ -8159,7 +10494,7 @@ MonoBehaviour:
         typeString: 
       - title: Dialogue Text
         value: "I didn\u2019t even hit one of them with it. I still don\u2019t know
-          if that\u2019s good or bad.\r\n\tIts useless now."
+          if that\u2019s good or bad.\r\n"
         type: 0
         typeString: 
       - title: Parenthetical
@@ -8185,7 +10520,13 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 8
+        originDialogueID: 13
+        destinationConversationID: 8
+        destinationDialogueID: 26
+        isConnector: 0
+        priority: 2
       conditionsString: Variable["hasExitKey"] == true and (Variable["GunKilled"]
         == 0)
       userScript: 
@@ -8213,20 +10554,19 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "I can\u2019t believe I didn\u2019t even hit something with it.\r\nI
-          guess all that training didn\u2019t pay off."
+        value: "I can\u2019t believe I didn\u2019t even hit something with it.\r\n"
         type: 0
         typeString: 
       - title: Parenthetical
@@ -8252,7 +10592,13 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 8
+        originDialogueID: 14
+        destinationConversationID: 8
+        destinationDialogueID: 25
+        isConnector: 0
+        priority: 2
       conditionsString: Variable["GunKilled"] == 0
       userScript: 
       onExecute:
@@ -8260,7 +10606,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1050.5057
+        x: 1053.4907
         y: 298.52814
         width: 160
         height: 30
@@ -8279,12 +10625,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
@@ -8356,12 +10702,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
@@ -8433,12 +10779,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
@@ -8495,8 +10841,537 @@ MonoBehaviour:
         y: 204.65578
         width: 160
         height: 30
-    canvasScrollPosition: {x: 82.70997, y: 16.5215}
-    canvasZoom: 0.64000034
+    - id: 19
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: But who knows what they might do if they find me. Just one bullet
+          though.
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 8
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 182.01099
+        y: 563
+        width: 160
+        height: 30
+    - id: 20
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Just one bullet, why is this even here?
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 8
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 1
+        y: 564
+        width: 160
+        height: 30
+    - id: 21
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: 'Just one bullet however.
+
+'
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 8
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 8
+        originDialogueID: 21
+        destinationConversationID: 8
+        destinationDialogueID: 22
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 369.989
+        y: 534
+        width: 160
+        height: 30
+    - id: 22
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: "Hopefully this doesn\u2019t provoke them from not being non-lethal"
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 8
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 369.989
+        y: 584
+        width: 160
+        height: 30
+    - id: 23
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: "They\u2019re still in there. Just one bullet though."
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 8
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 555.989
+        y: 535
+        width: 160
+        height: 30
+    - id: 24
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Lets actually try and use it this time.
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 8
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 673.006
+        y: 337.03876
+        width: 160
+        height: 30
+    - id: 25
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: "I guess all that training didn\u2019t pay off."
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 8
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 1053.4907
+        y: 348.52814
+        width: 160
+        height: 30
+    - id: 26
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Its useless now.
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 8
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 1246.0803
+        y: 349.5281
+        width: 160
+        height: 30
+    canvasScrollPosition: {x: 47.404297, y: 0}
+    canvasZoom: 0.6100004
   - id: 9
     fields:
     - title: Title
@@ -8625,7 +11500,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 2
+        value: -1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -8815,12 +11690,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
@@ -8886,12 +11761,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
@@ -9066,12 +11941,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
@@ -9137,12 +12012,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
@@ -9208,12 +12083,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 1
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
-        type: 5
+        value: 1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
@@ -9279,12 +12154,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 1
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
-        type: 5
+        value: 1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
@@ -9350,12 +12225,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
@@ -9421,12 +12296,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 1
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
-        type: 5
+        value: 1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
@@ -9473,7 +12348,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 255
+        x: 256.26584
         y: 299
         width: 160
         height: 30
@@ -9492,12 +12367,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
@@ -9563,12 +12438,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
@@ -9634,12 +12509,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
@@ -9705,12 +12580,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
@@ -9755,8 +12630,8 @@ MonoBehaviour:
         y: 546
         width: 160
         height: 30
-    canvasScrollPosition: {x: 11.391333, y: 37.88071}
-    canvasZoom: 0.8800001
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 0.7900002
   - id: 12
     fields:
     - title: Title
@@ -9885,12 +12760,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
@@ -9956,12 +12831,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
@@ -10027,12 +12902,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
@@ -10098,12 +12973,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
@@ -10169,12 +13044,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
