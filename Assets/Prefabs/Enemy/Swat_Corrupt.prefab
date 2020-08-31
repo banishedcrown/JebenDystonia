@@ -1263,6 +1263,7 @@ GameObject:
   - component: {fileID: 4027790325998824733}
   - component: {fileID: 2056074425456996107}
   - component: {fileID: 8858682705265103994}
+  - component: {fileID: 756359198}
   m_Layer: 0
   m_Name: Swat_Corrupt
   m_TagString: Untagged
@@ -1409,6 +1410,18 @@ MonoBehaviour:
     _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
     _objectReferences:
     - {fileID: 11400000, guid: c8206c9a0144cbc40b2837fdd50e33f4, type: 2}
+--- !u!114 &756359198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7990243138533058588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71e3b8fefcc329c4c8a2152a6a9a83e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8010891756640239316
 GameObject:
   m_ObjectHideFlags: 0
