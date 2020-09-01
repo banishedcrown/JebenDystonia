@@ -616,10 +616,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Dialogue Text
-        value: 'It seems to be locked..
-
-
-'
+        value: It seems to be locked..
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -886,9 +883,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'Huh, using the flashlight, the door is very obviously locked.
-
-'
+        value: Huh, using the flashlight, the door is very obviously locked.
         type: 0
         typeString: 
       - title: Parenthetical
@@ -960,9 +955,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'Yup, that is defiantly locked.
-
-'
+        value: Yup, that is definitely locked.
         type: 0
         typeString: 
       - title: Parenthetical
@@ -1034,9 +1027,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'Its locked.
-
-'
+        value: Its locked.
         type: 0
         typeString: 
       - title: Parenthetical
@@ -1485,7 +1476,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "As expected. The lock.\r..\n"
+        value: "As expected. The lock.\r.."
         type: 0
         typeString: 
       - title: Parenthetical
@@ -1925,7 +1916,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "\r\nUnlocks\u2026"
+        value: "Unlocks\u2026"
         type: 0
         typeString: 
       - title: Parenthetical
@@ -2223,8 +2214,8 @@ MonoBehaviour:
         y: 551.94073
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.5200006
+    canvasScrollPosition: {x: 17.582397, y: 43.95616}
+    canvasZoom: 0.9100002
   - id: 2
     fields:
     - title: Title
@@ -2371,9 +2362,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'Would you look at that, there is just a key lying around.
-
-'
+        value: Would you look at that, there is just a key lying around.
         type: 0
         typeString: 
       - title: Parenthetical
@@ -2456,7 +2445,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "Weird, why is this key just lying about? \r\n"
+        value: "Weird, why is this key just lying about? \r"
         type: 0
         typeString: 
       - title: Parenthetical
@@ -3839,10 +3828,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'Great now my head hurts even more.
-
-
-'
+        value: Great now my head hurts even more.
         type: 0
         typeString: 
       - title: Parenthetical
@@ -3914,9 +3900,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'Great now my head hurts even more.
-
-'
+        value: Great now my head hurts even more.
         type: 0
         typeString: 
       - title: Parenthetical
@@ -3988,10 +3972,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'Great now my head hurts even more.
-
-
-'
+        value: Great now my head hurts even more.
         type: 0
         typeString: 
       - title: Parenthetical
@@ -4063,10 +4044,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: 'It seems like they just want me to stay in this room.
-
-
-'
+        value: It seems like they just want me to stay in this room.
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -4214,9 +4192,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'It seems like they just want me to stay in this room.
-
-'
+        value: It seems like they just want me to stay in this room.
         type: 0
         typeString: 
       - title: Parenthetical
@@ -4614,10 +4590,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: 'I guess they had some idea of how to keep me here better.
-
-
-'
+        value: I guess they had some idea of how to keep me here better.
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -4688,10 +4661,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'I guess they had some idea of how to keep me here better.
-
-
-'
+        value: I guess they had some idea of how to keep me here better.
         type: 0
         typeString: 
       - title: Parenthetical
@@ -4766,10 +4736,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'I guess they had some idea of how to keep me here better.
-
-
-'
+        value: I guess they had some idea of how to keep me here better.
         type: 0
         typeString: 
       - title: Parenthetical
@@ -4841,10 +4808,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'I guess they had some idea of how to keep me here better.
-
-
-'
+        value: I guess they had some idea of how to keep me here better.
         type: 0
         typeString: 
       - title: Parenthetical
@@ -5123,9 +5087,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'I gotta find some way to disable the camera.
-
-'
+        value: I gotta find some way to disable the camera.
         type: 0
         typeString: 
       - title: Parenthetical
@@ -5197,9 +5159,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'Just disable the camera some way.
-
-'
+        value: Just disable the camera some way.
         type: 0
         typeString: 
       - title: Parenthetical
@@ -5271,9 +5231,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'It also seems like they took all of my stuff.
-
-'
+        value: It also seems like they took all of my stuff.
         type: 0
         typeString: 
       - title: Parenthetical
@@ -5378,7 +5336,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 415.78964
+        x: 417.2822
         y: 680.17633
         width: 160
         height: 30
@@ -5818,9 +5776,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'I guess they are worried about me raising an alert?
-
-'
+        value: I guess they are worried about me raising an alert?
         type: 0
         typeString: 
       - title: Parenthetical
@@ -6027,10 +5983,8 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'Even when I discharged a gun in here they still are using non-violent
+        value: Even when I discharged a gun in here they still are using non-violent
           tactics.
-
-'
         type: 0
         typeString: 
       - title: Parenthetical
@@ -6609,7 +6563,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1796.8265
+        x: 1798.3191
         y: 373.42245
         width: 160
         height: 30
@@ -7158,8 +7112,8 @@ MonoBehaviour:
         y: 458.61218
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.5500002
+    canvasScrollPosition: {x: 204.26025, y: 26.865692}
+    canvasZoom: 0.6700001
   - id: 4
     fields:
     - title: Title
@@ -7306,9 +7260,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'Well, this seems like it might be useful.
-
-'
+        value: Well, this seems like it might be useful.
         type: 0
         typeString: 
       - title: Parenthetical
@@ -7382,7 +7334,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "Huh, weird that this flashlight is just lying around. \r\n"
+        value: "Huh, weird that this flashlight is just lying around. \r"
         type: 0
         typeString: 
       - title: Parenthetical
@@ -7457,9 +7409,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'Very nice, a flashlight.
-
-'
+        value: Very nice, a flashlight.
         type: 0
         typeString: 
       - title: Parenthetical
@@ -7694,9 +7644,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'Oh hey, the flashlight again.
-
-'
+        value: Oh hey, the flashlight again.
         type: 0
         typeString: 
       - title: Parenthetical
@@ -7768,9 +7716,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'Huh, did not notice this being around before.
-
-'
+        value: Huh, did not notice this being around before.
         type: 0
         typeString: 
       - title: Parenthetical
@@ -8074,7 +8020,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 433.0715
+        x: 434.248
         y: 192.12299
         width: 160
         height: 30
@@ -8291,7 +8237,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "Let see\u2026 If I just overwork its motor.\r\n"
+        value: "Let see\u2026 If I just overwork its motor.\r"
         type: 0
         typeString: 
       - title: Parenthetical
@@ -8433,7 +8379,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "Now it can\u2019t turn anymore.\r\n"
+        value: "Now it can\u2019t turn anymore.\r"
         type: 0
         typeString: 
       - title: Parenthetical
@@ -8668,7 +8614,7 @@ MonoBehaviour:
       - title: Title
         value: First
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Pictures
         value: '[]'
         type: 3
@@ -8676,7 +8622,7 @@ MonoBehaviour:
       - title: Description
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Actor
         value: 2
         type: 5
@@ -8688,15 +8634,15 @@ MonoBehaviour:
       - title: Menu Text
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Dialogue Text
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Parenthetical
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Audio Files
         value: '[]'
         type: 3
@@ -8704,11 +8650,11 @@ MonoBehaviour:
       - title: Video File
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Sequence
         value: None()
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       conversationID: 6
       isRoot: 0
       isGroup: 0
@@ -8730,7 +8676,10 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: Variable["ExitKeyTouched"] == 0
-      userScript: Variable["ExitKeyTouched"] = Variable["ExitKeyTouched"] + 1
+      userScript: 'Variable["ExitKeyTouched"] = Variable["ExitKeyTouched"] + 1;
+
+        Variable["hasExitKey"]
+        = true'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -8813,7 +8762,10 @@ MonoBehaviour:
         isConnector: 0
         priority: 3
       conditionsString: Variable["ExitKeyTouched"] > 0
-      userScript: Variable["ExitKeyTouched"] = Variable["ExitKeyTouched"] + 1
+      userScript: 'Variable["ExitKeyTouched"] = Variable["ExitKeyTouched"] + 1;
+
+        Variable["hasExitKey"]
+        = true'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -8850,7 +8802,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "Huh, A key. \r\n"
+        value: "Huh, A key. \r"
         type: 0
         typeString: 
       - title: Parenthetical
@@ -8921,9 +8873,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'Hey, I think this key might work for the exit.
-
-'
+        value: Hey, I think this key might work for the exit.
         type: 0
         typeString: 
       - title: Parenthetical
@@ -8975,7 +8925,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Pictures
-        value: '[]'
+        value: '[Assets/Textures/1st Flashback.png]'
         type: 3
         typeString: CustomFieldType_Files
       - title: Description
@@ -9131,7 +9081,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "Hey, its that same key again. \r\n"
+        value: "Hey, its that same key again. \r"
         type: 0
         typeString: 
       - title: Parenthetical
@@ -9203,7 +9153,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "Hey, its that same key again. \r\n"
+        value: "Hey, its that same key again. \r"
         type: 0
         typeString: 
       - title: Parenthetical
@@ -9274,7 +9224,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "There\u2019s the Exit door key.\r\n"
+        value: "There\u2019s the Exit door key.\r"
         type: 0
         typeString: 
       - title: Parenthetical
@@ -9655,8 +9605,8 @@ MonoBehaviour:
         y: 252.74757
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 126.36114}
-    canvasZoom: 0.85000014
+    canvasScrollPosition: {x: 207.62415, y: 72.240814}
+    canvasZoom: 0.6700002
   - id: 7
     fields:
     - title: Title
@@ -9770,7 +9720,7 @@ MonoBehaviour:
         destinationConversationID: 7
         destinationDialogueID: 17
         isConnector: 0
-        priority: 2
+        priority: 4
       conditionsString: 
       userScript: 
       onExecute:
@@ -9913,9 +9863,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'It seems the door is locked as well.
-
-'
+        value: It seems the door is locked as well.
         type: 0
         typeString: 
       - title: Parenthetical
@@ -10049,7 +9997,7 @@ MonoBehaviour:
         destinationConversationID: 7
         destinationDialogueID: 16
         isConnector: 0
-        priority: 2
+        priority: 4
       - originConversationID: 7
         originDialogueID: 3
         destinationConversationID: 7
@@ -10243,7 +10191,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "I guess I can give it a quick shot\u2026.\r\n"
+        value: "I guess I can give it a quick shot\u2026.\r"
         type: 0
         typeString: 
       - title: Parenthetical
@@ -10267,7 +10215,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: Passthrough
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
@@ -10381,9 +10329,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'Looks like the door is locked.
-
-'
+        value: Looks like the door is locked.
         type: 0
         typeString: 
       - title: Parenthetical
@@ -10455,9 +10401,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'If I had a shotgun sure. I could try shooting the lock off.
-
-'
+        value: If I had a shotgun sure. I could try shooting the lock off.
         type: 0
         typeString: 
       - title: Parenthetical
@@ -10481,7 +10425,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: Passthrough
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 7
@@ -10857,11 +10801,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'Crap, the door is locked.
-
-          Let me try this key I found.
-
-'
+        value: Crap, the door is locked.
         type: 0
         typeString: 
       - title: Parenthetical
@@ -10891,7 +10831,7 @@ MonoBehaviour:
       - originConversationID: 7
         originDialogueID: 15
         destinationConversationID: 7
-        destinationDialogueID: 22
+        destinationDialogueID: 26
         isConnector: 0
         priority: 2
       conditionsString: Variable["hasExitKey"] == true and (Variable["ExitDoorUnlocked"]
@@ -10936,9 +10876,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'Hey, would you look at that. It works!
-
-'
+        value: Hey, would you look at that. It works!
         type: 0
         typeString: 
       - title: Parenthetical
@@ -10982,8 +10920,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1138.5192
-        y: 117.30032
+        x: 1143.0265
+        y: 119.42798
         width: 160
         height: 30
     - id: 17
@@ -11213,7 +11151,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "I don\u2019t think my key works however.\r\n"
+        value: "I don\u2019t think my key works however.\r"
         type: 0
         typeString: 
       - title: Parenthetical
@@ -11383,8 +11321,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 502.00336
-        y: 301.9349
+        x: 557.71765
+        y: 340.50632
         width: 160
         height: 30
     - id: 23
@@ -11582,8 +11520,79 @@ MonoBehaviour:
         y: 146.84576
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 149.1137}
-    canvasZoom: 0.88000005
+    - id: 26
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Let me try this key I found.
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 7
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 7
+        originDialogueID: 26
+        destinationConversationID: 7
+        destinationDialogueID: 22
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 519.8165
+        y: 277.22876
+        width: 160
+        height: 30
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 0.70000017
   - id: 8
     fields:
     - title: Title
@@ -11884,9 +11893,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'What a weird gun.
-
-'
+        value: What a weird gun.
         type: 0
         typeString: 
       - title: Parenthetical
@@ -11958,8 +11965,7 @@ MonoBehaviour:
         typeString: 
       - title: Dialogue Text
         value: "I might be able to still save them. I\u2026 don\u2019t want to have
-          to kill them.\r\nBut who knows what they might do if they find me. Just
-          one bullet though."
+          to kill them.\r"
         type: 0
         typeString: 
       - title: Parenthetical
@@ -12031,7 +12037,7 @@ MonoBehaviour:
         typeString: 
       - title: Dialogue Text
         value: "I... I really don\u2019t want to use this. I might be able to still
-          save them.\r\n"
+          save them.\r"
         type: 0
         typeString: 
       - title: Parenthetical
@@ -12102,9 +12108,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'This should afford me some protection.
-
-'
+        value: This should afford me some protection.
         type: 0
         typeString: 
       - title: Parenthetical
@@ -12333,7 +12337,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "Huh that original round still hasn\u2019t been fired.\r\n"
+        value: "Huh that original round still hasn\u2019t been fired.\r"
         type: 0
         typeString: 
       - title: Parenthetical
@@ -12471,7 +12475,7 @@ MonoBehaviour:
         typeString: 
       - title: Dialogue Text
         value: "I didn\u2019t even hit one of them with it. I still don\u2019t know
-          if that\u2019s good or bad.\r\n"
+          if that\u2019s good or bad.\r"
         type: 0
         typeString: 
       - title: Parenthetical
@@ -12543,7 +12547,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "I can\u2019t believe I didn\u2019t even hit something with it.\r\n"
+        value: "I can\u2019t believe I didn\u2019t even hit something with it.\r"
         type: 0
         typeString: 
       - title: Parenthetical
@@ -12976,9 +12980,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'Just one bullet however.
-
-'
+        value: Just one bullet however.
         type: 0
         typeString: 
       - title: Parenthetical
@@ -13493,9 +13495,7 @@ MonoBehaviour:
 
           Even moreso unscathed.
 
-          I
-          got to warn HQ about this, whatever turned my squad into those monsters
-          needs to be contained.'
+'
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -13525,7 +13525,13 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 9
+        originDialogueID: 1
+        destinationConversationID: 9
+        destinationDialogueID: 3
+        isConnector: 0
+        priority: 2
       conditionsString: 
       userScript: 
       onExecute:
@@ -13537,7 +13543,73 @@ MonoBehaviour:
         y: 152
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 0}
+    - id: 3
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: I got to warn HQ about this, whatever turned my squad into those monsters
+          needs to be contained.
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 9
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 68
+        y: 205
+        width: 160
+        height: 30
+    canvasScrollPosition: {x: 0, y: 43}
     canvasZoom: 1
   - id: 10
     fields:
@@ -13657,7 +13729,7 @@ MonoBehaviour:
       - title: Title
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Pictures
         value: '[]'
         type: 3
@@ -13665,7 +13737,7 @@ MonoBehaviour:
       - title: Description
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Actor
         value: -1
         type: 0
@@ -13677,15 +13749,15 @@ MonoBehaviour:
       - title: Menu Text
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Dialogue Text
         value: Wait, how did I even get knocked out in the first place?
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Parenthetical
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Audio Files
         value: '[]'
         type: 3
@@ -13693,11 +13765,11 @@ MonoBehaviour:
       - title: Video File
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Sequence
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       conversationID: 10
       isRoot: 0
       isGroup: 0
@@ -13728,15 +13800,15 @@ MonoBehaviour:
       - title: Title
         value: Knockout Flashback
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Pictures
-        value: '[]'
+        value: '[Assets/Textures/2nd Flashback.png]'
         type: 3
         typeString: CustomFieldType_Files
       - title: Description
         value: (Has flashback to him entering a room)
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Actor
         value: -1
         type: 0
@@ -13748,15 +13820,15 @@ MonoBehaviour:
       - title: Menu Text
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Dialogue Text
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Parenthetical
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Audio Files
         value: '[]'
         type: 3
@@ -13764,11 +13836,13 @@ MonoBehaviour:
       - title: Video File
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: 'SetActive(FB (1));
+
+          Delay(1)'
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       conversationID: 10
       isRoot: 0
       isGroup: 0
@@ -13788,8 +13862,8 @@ MonoBehaviour:
         y: 131
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 1
+    canvasScrollPosition: {x: 3.5446062, y: 11.849604}
+    canvasZoom: 1.06
   - id: 11
     fields:
     - title: Title
@@ -13908,7 +13982,7 @@ MonoBehaviour:
       - title: Title
         value: Cent Memory
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Pictures
         value: '[]'
         type: 3
@@ -13916,7 +13990,7 @@ MonoBehaviour:
       - title: Description
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Actor
         value: -1
         type: 0
@@ -13928,15 +14002,15 @@ MonoBehaviour:
       - title: Menu Text
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: 
+        value: Ah, I remember we found those creepy centipedes...
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Parenthetical
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Audio Files
         value: '[]'
         type: 3
@@ -13944,11 +14018,17 @@ MonoBehaviour:
       - title: Video File
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Sequence
+        value: 'SetActive(FB (2),true);;
+
+          {{default}}'
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Response Menu Sequence
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       conversationID: 11
       isRoot: 0
       isGroup: 0
@@ -13979,7 +14059,7 @@ MonoBehaviour:
       - title: Title
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Pictures
         value: '[]'
         type: 3
@@ -13987,7 +14067,7 @@ MonoBehaviour:
       - title: Description
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Actor
         value: -1
         type: 0
@@ -13999,15 +14079,15 @@ MonoBehaviour:
       - title: Menu Text
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Dialogue Text
         value: "Wait. Why weren\u2019t those things in there?"
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Parenthetical
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Audio Files
         value: '[]'
         type: 3
@@ -14015,11 +14095,13 @@ MonoBehaviour:
       - title: Video File
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: 'SetActive(FB (2),false);;
+
+          {{default}}'
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       conversationID: 11
       isRoot: 0
       isGroup: 0
@@ -14041,8 +14123,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 20
-        y: 130
+        x: 21.31578
+        y: 131.17648
         width: 160
         height: 30
     - id: 3
@@ -14050,7 +14132,7 @@ MonoBehaviour:
       - title: Title
         value: Cent Flopping on Head
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Pictures
         value: '[]'
         type: 3
@@ -14058,7 +14140,7 @@ MonoBehaviour:
       - title: Description
         value: Cent Flopping on Head
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Actor
         value: -1
         type: 0
@@ -14070,15 +14152,15 @@ MonoBehaviour:
       - title: Menu Text
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: 
+        value: It jumped on me?
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Parenthetical
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Audio Files
         value: '[]'
         type: 3
@@ -14086,11 +14168,13 @@ MonoBehaviour:
       - title: Video File
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: 'SetActive(FB (3),true);;
+
+          {{default}}'
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       conversationID: 11
       isRoot: 0
       isGroup: 0
@@ -14121,7 +14205,7 @@ MonoBehaviour:
       - title: Title
         value: Flopping Head over
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Pictures
         value: '[]'
         type: 3
@@ -14129,7 +14213,7 @@ MonoBehaviour:
       - title: Description
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Actor
         value: -1
         type: 0
@@ -14141,15 +14225,15 @@ MonoBehaviour:
       - title: Menu Text
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: 
+        value: and Attacked me!
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Parenthetical
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Audio Files
         value: '[]'
         type: 3
@@ -14157,11 +14241,15 @@ MonoBehaviour:
       - title: Video File
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: 'SetActive(FB (3),false);
+
+          SetActive(FB (4),true);;
+
+          {{default}}'
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       conversationID: 11
       isRoot: 0
       isGroup: 0
@@ -14183,7 +14271,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 20
+        x: 21.315788
         y: 230
         width: 160
         height: 30
@@ -14192,7 +14280,7 @@ MonoBehaviour:
       - title: Title
         value: Walking to Team Members
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Pictures
         value: '[]'
         type: 3
@@ -14200,7 +14288,7 @@ MonoBehaviour:
       - title: Description
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Actor
         value: -1
         type: 0
@@ -14212,15 +14300,15 @@ MonoBehaviour:
       - title: Menu Text
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: 
+        value: I went back to my team
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Parenthetical
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Audio Files
         value: '[]'
         type: 3
@@ -14228,11 +14316,15 @@ MonoBehaviour:
       - title: Video File
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: 'SetActive(FB (4),false);
+
+          SetActive(FB (6),true);
+
+          {{default}}'
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       conversationID: 11
       isRoot: 0
       isGroup: 0
@@ -14263,7 +14355,7 @@ MonoBehaviour:
       - title: Title
         value: They Attack Him
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Pictures
         value: '[]'
         type: 3
@@ -14271,7 +14363,7 @@ MonoBehaviour:
       - title: Description
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Actor
         value: -1
         type: 0
@@ -14283,15 +14375,15 @@ MonoBehaviour:
       - title: Menu Text
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: 
+        value: And Then they turned evil and attacked me!
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Parenthetical
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Audio Files
         value: '[]'
         type: 3
@@ -14299,11 +14391,15 @@ MonoBehaviour:
       - title: Video File
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: 'SetActive(FB (6),false);
+
+          SetActive(FB (5),true);
+
+          {{default}}'
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       conversationID: 11
       isRoot: 0
       isGroup: 0
@@ -14326,7 +14422,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 256.26584
-        y: 299
+        y: 297.82355
         width: 160
         height: 30
     - id: 7
@@ -14334,7 +14430,7 @@ MonoBehaviour:
       - title: Title
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Pictures
         value: '[]'
         type: 3
@@ -14342,7 +14438,7 @@ MonoBehaviour:
       - title: Description
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Actor
         value: -1
         type: 0
@@ -14354,15 +14450,15 @@ MonoBehaviour:
       - title: Menu Text
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Dialogue Text
         value: Oh, NO.
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Parenthetical
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Audio Files
         value: '[]'
         type: 3
@@ -14370,11 +14466,13 @@ MonoBehaviour:
       - title: Video File
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: 'SetActive(FB (5),false);
+
+          {{default}}'
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       conversationID: 11
       isRoot: 0
       isGroup: 0
@@ -14405,7 +14503,7 @@ MonoBehaviour:
       - title: Title
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Pictures
         value: '[]'
         type: 3
@@ -14413,7 +14511,7 @@ MonoBehaviour:
       - title: Description
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Actor
         value: -1
         type: 0
@@ -14425,15 +14523,15 @@ MonoBehaviour:
       - title: Menu Text
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Dialogue Text
         value: I... Can't stop moving!
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Parenthetical
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Audio Files
         value: '[]'
         type: 3
@@ -14441,11 +14539,11 @@ MonoBehaviour:
       - title: Video File
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: '{{default}}'
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       conversationID: 11
       isRoot: 0
       isGroup: 0
@@ -14476,7 +14574,7 @@ MonoBehaviour:
       - title: Title
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Pictures
         value: '[]'
         type: 3
@@ -14484,7 +14582,7 @@ MonoBehaviour:
       - title: Description
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Actor
         value: -1
         type: 0
@@ -14496,15 +14594,15 @@ MonoBehaviour:
       - title: Menu Text
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Dialogue Text
         value: I've got to do SOMETHING!
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Parenthetical
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Audio Files
         value: '[]'
         type: 3
@@ -14512,11 +14610,11 @@ MonoBehaviour:
       - title: Video File
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Sequence
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       conversationID: 11
       isRoot: 0
       isGroup: 0
@@ -14608,7 +14706,7 @@ MonoBehaviour:
         width: 160
         height: 30
     canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.7900002
+    canvasZoom: 0.8500002
   - id: 12
     fields:
     - title: Title
@@ -14782,7 +14880,7 @@ MonoBehaviour:
         destinationDialogueID: 2
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: CurrentQuestState("Don't Let It Out!") == "failure"
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -15072,7 +15170,7 @@ MonoBehaviour:
         width: 160
         height: 30
     canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 1
+    canvasZoom: 0.94000006
   syncInfo:
     syncActors: 0
     syncItems: 0
