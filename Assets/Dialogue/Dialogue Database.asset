@@ -9776,7 +9776,7 @@ MonoBehaviour:
         destinationConversationID: 7
         destinationDialogueID: 17
         isConnector: 0
-        priority: 2
+        priority: 4
       conditionsString: 
       userScript: 
       onExecute:
@@ -11588,8 +11588,8 @@ MonoBehaviour:
         y: 146.84576
         width: 160
         height: 30
-    canvasScrollPosition: {x: 28.45337, y: 51.219498}
-    canvasZoom: 0.8200001
+    canvasScrollPosition: {x: 0, y: 31.645569}
+    canvasZoom: 0.79000014
   - id: 8
     fields:
     - title: Title
