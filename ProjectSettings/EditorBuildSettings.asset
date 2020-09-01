@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Office Level.unity
     guid: 21f9cc03f87a8b0469749be3181c131f
+  - enabled: 1
+    path: Assets/Scenes/EndingScene.unity
+    guid: a28b610ba77350b45b3476528a21b923
   m_configObjects: {}

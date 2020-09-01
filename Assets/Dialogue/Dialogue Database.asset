@@ -1190,7 +1190,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: None()
         type: 0
         typeString: 
       conversationID: 1
@@ -1418,7 +1418,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: None()
         type: 0
         typeString: 
       conversationID: 1
@@ -1638,7 +1638,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: None()
         type: 0
         typeString: 
       conversationID: 1
@@ -1721,7 +1721,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: None()
         type: 0
         typeString: 
       conversationID: 1
@@ -1758,7 +1758,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 436.23843
+        x: 437.45795
         y: 420.94083
         width: 160
         height: 30
@@ -2223,8 +2223,8 @@ MonoBehaviour:
         y: 551.94073
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.5200006
+    canvasScrollPosition: {x: 141.4978, y: 62.637432}
+    canvasZoom: 0.9100002
   - id: 2
     fields:
     - title: Title
@@ -2543,7 +2543,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: None()
         type: 0
         typeString: 
       conversationID: 2
@@ -2620,7 +2620,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: None()
         type: 0
         typeString: 
       conversationID: 2
@@ -3763,7 +3763,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: None()
         type: 0
         typeString: 
       conversationID: 3
@@ -4375,7 +4375,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: None()
         type: 0
         typeString: 
       conversationID: 3
@@ -4464,7 +4464,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: None()
         type: 0
         typeString: 
       conversationID: 3
@@ -4535,7 +4535,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: None()
         type: 0
         typeString: 
       conversationID: 3
@@ -4931,7 +4931,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: None()
         type: 0
         typeString: 
       conversationID: 3
@@ -7158,8 +7158,8 @@ MonoBehaviour:
         y: 458.61218
         width: 160
         height: 30
-    canvasScrollPosition: {x: 355.33777, y: 35.714264}
-    canvasZoom: 0.70000005
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 0.5500002
   - id: 4
     fields:
     - title: Title
@@ -7550,7 +7550,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: None()
         type: 0
         typeString: 
       conversationID: 4
@@ -7633,7 +7633,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: None()
         type: 0
         typeString: 
       conversationID: 4
@@ -8143,8 +8143,8 @@ MonoBehaviour:
         y: 190.65826
         width: 160
         height: 30
-    canvasScrollPosition: {x: 252.12766, y: 1.0638428}
-    canvasZoom: 0.94000006
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 0.85000014
   - id: 5
     fields:
     - title: Title
@@ -8706,7 +8706,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: None()
         type: 0
         typeString: 
       conversationID: 6
@@ -8730,7 +8730,10 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: Variable["ExitKeyTouched"] == 0
-      userScript: Variable["ExitKeyTouched"] = Variable["ExitKeyTouched"] + 1
+      userScript: 'Variable["ExitKeyTouched"] = Variable["ExitKeyTouched"] + 1;
+
+        Variable["hasExitKey"]
+        = true'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -8783,7 +8786,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: None()
         type: 0
         typeString: 
       conversationID: 6
@@ -8813,7 +8816,10 @@ MonoBehaviour:
         isConnector: 0
         priority: 3
       conditionsString: Variable["ExitKeyTouched"] > 0
-      userScript: Variable["ExitKeyTouched"] = Variable["ExitKeyTouched"] + 1
+      userScript: 'Variable["ExitKeyTouched"] = Variable["ExitKeyTouched"] + 1;
+
+        Variable["hasExitKey"]
+        = true'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -9655,8 +9661,8 @@ MonoBehaviour:
         y: 252.74757
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.73000026
+    canvasScrollPosition: {x: 14.925415, y: 43.89014}
+    canvasZoom: 0.9100001
   - id: 7
     fields:
     - title: Title
@@ -9825,7 +9831,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: None()
         type: 0
         typeString: 
       conversationID: 7
@@ -10003,7 +10009,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: None()
         type: 0
         typeString: 
       conversationID: 7
@@ -10102,8 +10108,8 @@ MonoBehaviour:
       - title: Dialogue Text
         value: 'It seems the door is locked as well.
 
-          Let me just try
-          and test that original key.
+          Let me just try and
+          test that original key.
 
 '
         type: 0
@@ -11582,8 +11588,8 @@ MonoBehaviour:
         y: 146.84576
         width: 160
         height: 30
-    canvasScrollPosition: {x: 378.43695, y: 48.520947}
-    canvasZoom: 0.67000026
+    canvasScrollPosition: {x: 28.45337, y: 51.219498}
+    canvasZoom: 0.8200001
   - id: 8
     fields:
     - title: Title
@@ -11746,7 +11752,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: None()
         type: 0
         typeString: 
       conversationID: 8
@@ -11826,7 +11832,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: None()
         type: 0
         typeString: 
       conversationID: 8
@@ -12191,6 +12197,10 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
+        value: None()
+        type: 0
+        typeString: 
+      - title: Response Menu Sequence
         value: 
         type: 0
         typeString: 
@@ -12268,7 +12278,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: None()
         type: 0
         typeString: 
       conversationID: 8
@@ -12626,7 +12636,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: None()
         type: 0
         typeString: 
       conversationID: 8
@@ -12703,7 +12713,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: None()
         type: 0
         typeString: 
       conversationID: 8
@@ -12780,7 +12790,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: None()
         type: 0
         typeString: 
       conversationID: 8
@@ -13343,7 +13353,7 @@ MonoBehaviour:
         y: 349.5281
         width: 160
         height: 30
-    canvasScrollPosition: {x: 47.404297, y: 0}
+    canvasScrollPosition: {x: 0, y: 36.06555}
     canvasZoom: 0.6100004
   - id: 9
     fields:
@@ -14778,7 +14788,7 @@ MonoBehaviour:
         destinationDialogueID: 2
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: CurrentQuestState("Don't Let It Out!") == "failure"
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -15068,7 +15078,7 @@ MonoBehaviour:
         width: 160
         height: 30
     canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 1
+    canvasZoom: 0.94000006
   syncInfo:
     syncActors: 0
     syncItems: 0

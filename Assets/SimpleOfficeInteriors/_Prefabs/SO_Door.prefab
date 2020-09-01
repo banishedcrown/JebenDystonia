@@ -12,6 +12,9 @@ GameObject:
   - component: {fileID: 3369066}
   - component: {fileID: 2399480}
   - component: {fileID: 6824633835630304559}
+  - component: {fileID: 763926307962507872}
+  - component: {fileID: 8129256800343316094}
+  - component: {fileID: 711669824563132822}
   m_Layer: 0
   m_Name: SO_Door
   m_TagString: Untagged
@@ -107,3 +110,49 @@ MonoBehaviour:
     onUse:
       m_PersistentCalls:
         m_Calls: []
+--- !u!114 &763926307962507872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 195318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1465209106, guid: c8d0ad23af520fe46aabe2b1fecf6462, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"declarations":{"collection":{"$content":[{"name":"inverted","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"doorOpenSound","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"doorCloseSound","value":{"$content":1,"$type":"UnityEngine.Object"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _objectReferences:
+    - {fileID: 8300000, guid: 652fd84622ddb564e8dae0e0d4176643, type: 3}
+    - {fileID: 8300000, guid: 652fd84622ddb564e8dae0e0d4176643, type: 3}
+--- !u!114 &8129256800343316094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 195318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -57143145, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: 6d431077979ae854b98408f45224cd23, type: 2}
+--- !u!114 &711669824563132822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 195318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71e3b8fefcc329c4c8a2152a6a9a83e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventName: 
