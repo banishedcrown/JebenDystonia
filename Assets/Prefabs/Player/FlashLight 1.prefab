@@ -29,7 +29,7 @@ GameObject:
   - component: {fileID: 1729667350}
   - component: {fileID: 1729667353}
   - component: {fileID: 1729667352}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: FlashLight 1
   m_TagString: Interactable
   m_Icon: {fileID: 0}
@@ -285,39 +285,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1807938774770433761, guid: 716c804899e804548a77aee7abfa3d0f, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2066945247571801935, guid: 716c804899e804548a77aee7abfa3d0f, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2581841987242792505, guid: 716c804899e804548a77aee7abfa3d0f, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2841583297041960368, guid: 716c804899e804548a77aee7abfa3d0f, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5658960862321264591, guid: 716c804899e804548a77aee7abfa3d0f, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6757858775364781553, guid: 716c804899e804548a77aee7abfa3d0f, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8148525099798517732, guid: 716c804899e804548a77aee7abfa3d0f, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8485015811583932622, guid: 716c804899e804548a77aee7abfa3d0f, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9175691553725307362, guid: 716c804899e804548a77aee7abfa3d0f, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 716c804899e804548a77aee7abfa3d0f, type: 3}
