@@ -10,6 +10,7 @@ public class PauseMenu : MonoBehaviour
     public AudioMixer audioMixer;
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
+    FMOD.Studio.Bus Master;
 
     void Update()
     {
@@ -24,6 +25,10 @@ public class PauseMenu : MonoBehaviour
                 Pause();
             }
         }
+    }
+    private void Awake()
+    {
+        Master = FMODUnity.RuntimeManager.GetBus("bus:/Master");
     }
 
     public void Resume()
@@ -47,6 +52,7 @@ public class PauseMenu : MonoBehaviour
     public void SetVolume(float volume)
     {
         audioMixer.SetFloat("Master", Mathf.Log10(volume) * 20);
+        Master.setVolume(volume);
     }
 
     public void ReturntoMenu()

@@ -10,6 +10,7 @@ public class OptionsMenu : MonoBehaviour
     public AudioMixer audioMixer;
     public Dropdown resolutionDropdown;
     Resolution[] resolutions;
+    FMOD.Studio.Bus Master;
 
     void Start()
     {
@@ -38,6 +39,11 @@ public class OptionsMenu : MonoBehaviour
 
     }
 
+    private void Awake()
+    {
+        Master = FMODUnity.RuntimeManager.GetBus("bus:/Master");
+    }
+
     public void SetResolution (int resolutionIndex)
     {
         Resolution resolution = resolutions[resolutionIndex];
@@ -47,6 +53,7 @@ public class OptionsMenu : MonoBehaviour
     public void SetVolume(float volume)
     {
         audioMixer.SetFloat("Master", Mathf.Log10(volume) * 20);
+        Master.setVolume(volume);
     }
 
     public void SetFullscreen (bool isFullscreen)
