@@ -10,7 +10,13 @@ public class MainMenu : MonoBehaviour
         Debug.Log("Playing Game");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
-    
+
+    public void MainMenuBack()
+    {
+        Debug.Log("GoingBack");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
+    }
+
     public void WebsiteURL()
     {
         Debug.Log("URL PROC");
